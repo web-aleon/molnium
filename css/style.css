@@ -1,0 +1,453 @@
+/* VAR*/
+
+/*black*/
+
+/*red*/
+
+/*yellow*/
+
+/*MIXINS*/
+
+/* FONTS */
+
+@font-face {
+  font-family: 'PhantonIconsA';
+  src: url("../fonts/Panton/PantonIconsAFill-Regular.otf");
+}
+
+@font-face {
+  font-family: 'PhantonIconsB';
+  src: url("../fonts/Panton/PantonIconsBFill-Regular.otf");
+}
+
+@font-face {
+  font-family: 'PhantonIconsC';
+  src: url("../fonts/Panton/PantonIconsCFill-Regular.otf");
+}
+
+@font-face {
+  font-family: 'PhantonIconsD';
+  src: url("../fonts/Panton/PantonIconsDFill-Regular.otf");
+}
+
+@font-face {
+  font-family: 'Phanton';
+  src: url("../fonts/Panton/Panton-Regular.otf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Phanton';
+  src: url("../fonts/Panton/Panton-Bold.otf");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Myriad';
+  src: url("../fonts/MyriadPro-Regular.otf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Myriad';
+  src: url("../fonts/MyriadPro-Bold.otf");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Raleway';
+  src: url("../fonts/Raleway-Regular.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/*
+font-family: 'Open Sans', sans-serif;
+
+*/
+
+/* COMMON */
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  color: #12171a;
+  font-family: 'Myriad';
+}
+
+a {
+  text-decoration: none;
+}
+
+h2 {
+  text-align: center;
+  font-size: 30px;
+  line-height: 36px;
+  font-family: 'Phanton';
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #244e64;
+  margin: 0;
+}
+
+.container {
+  width: 1270px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.container:after,
+.content-wrapper:after,
+.clearfix:after,
+.container:before,
+.content-wrapper:before,
+.clearfix:before {
+  content: "";
+  display: table;
+  table-layout: fixed;
+}
+
+.container:after,
+.content-wrapper:after,
+.clearfix:after {
+  clear: both;
+}
+
+.ph-icon {
+  color: #ce0c14;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.ph-icon-a {
+  font-family: 'PhantonIconsA';
+}
+
+.ph-icon-b {
+  font-family: 'PhantonIconsB';
+}
+
+.ph-icon-c {
+  font-family: 'PhantonIconsC';
+}
+
+.ph-icon-d {
+  font-family: 'PhantonIconsD';
+}
+
+.fl-right {
+  float: right;
+}
+
+span.test {
+  font-family: 'Myriad';
+}
+
+/* HEADER */
+
+#header {
+  padding: 18px 0;
+  width: 100%;
+}
+
+#header a.logo {
+  float: left;
+}
+
+#header .header_contact {
+  float: left;
+  padding-top: 27px;
+  padding-bottom: 22px;
+  margin-left: 120px;
+}
+
+#header .header_contact-item {
+  float: left;
+}
+
+#header .header_contact-item:nth-child(2) {
+  margin: 0 92px 0 67px;
+}
+
+#header .ph-icon {
+  float: left;
+  font-size: 30px;
+  margin-right: 24px;
+}
+
+#header .icon-rotate {
+  -webkit-transform: rotate(270deg);
+      -ms-transform: rotate(270deg);
+          transform: rotate(270deg);
+}
+
+#header .contact-info {
+  float: left;
+}
+
+#header .info-main {
+  display: block;
+  margin: 0;
+  color: #0a5072;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 21px;
+}
+
+#header .info-secondary {
+  display: block;
+  margin: 0;
+  color: #112526;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 16px;
+}
+
+#header .contact-info sup {
+  text-decoration: underline;
+}
+
+#banner {
+  background-color: #f6d258;
+  width: 100%;
+}
+
+#banner .container {
+  background: url("../img/banner-men.png") no-repeat;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+#banner .main-menu {
+  width: 100%;
+  margin-top: 31px;
+  text-align: center;
+}
+
+#banner ul {
+  float: left;
+  list-style: none;
+  margin: 0 0 0 394px;
+  padding: 0;
+  text-align: center;
+}
+
+#banner li {
+  float: left;
+  padding: 0;
+  margin-right: 11px;
+}
+
+#banner li:last-child {
+  margin-right: 0;
+}
+
+#banner li:last-child a {
+  font-weight: bold;
+}
+
+#banner li a {
+  font-size: 18px;
+  line-height: 34px;
+  border: 3px solid #fff;
+  display: inline-block;
+  width: 129px;
+  color: #12171a;
+}
+
+#banner li a:hover {
+  border: 3px solid #ce0c14;
+}
+
+#banner .content-wrapper {
+  font-family: 'Phanton';
+  padding-top: 33px;
+  margin-bottom: 94px;
+}
+
+#banner .text-block {
+  float: left;
+  max-width: 370px;
+}
+
+#banner .text-block h1 {
+  margin: 17px 0 0;
+  font-size: 37px;
+  font-weight: 700;
+}
+
+#banner .text-block .stars {
+  padding-left: 93px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+#banner .text-block .stars img {
+  margin-right: 15px;
+}
+
+#banner .text-block p {
+  margin: 0;
+  max-width: 340px;
+  font-size: 22px;
+}
+
+#banner .form {
+  float: left;
+  width: 352px;
+  margin-left: 51px;
+  padding: 22px 18px 41px;
+  border: 7px solid #f8f8f8;
+  text-align: center;
+}
+
+#banner .form p {
+  margin: 0 0 9px;
+  font-size: 21px;
+  font-weight: bold;
+  text-align: center;
+}
+
+#banner .form input {
+  display: block;
+  width: 100%;
+  border: none;
+  padding: 0 15px;
+  border-radius: 5px;
+  line-height: 62px;
+  margin-bottom: 17px;
+}
+
+#banner .form button {
+  width: 223px;
+  height: 55px;
+  background-color: #ce0c14;
+  text-align: center;
+  border: none;
+  border-radius: 5px;
+  border-top: 1px solid #740b0f;
+  border-bottom: 3px solid #740b0f;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+#banner .form button:hover {
+  background-color: #740b0f;
+}
+
+/* AFTER BANNER DIVIDER */
+
+.banner-divider {
+  background-color: transparent;
+  width: 100%;
+  height: 170px;
+  background: url("../img/banner-divider.png") no-repeat;
+  background-size: 100% 100%;
+  background-position: 50% 50%;
+  margin-top: -170px;
+}
+
+@media (max-width: 1600px) {
+  .banner-divider {
+    height: 150px;
+    margin-top: -150px;
+  }
+}
+
+/*PROBLEMS SECTION*/
+
+#problems {
+  padding-bottom: 11px;
+  background-color: #f8f8f8;
+}
+
+#problems .content {
+  margin-top: 28px;
+}
+
+#problems .left,
+#problems .right,
+#problems .main {
+  float: left;
+}
+
+#problems .left {
+  width: 280px;
+  margin-top: 115px;
+  margin-right: 4px;
+}
+
+#problems .right {
+  width: 250px;
+  margin-top: 125px;
+  margin-left: 50px;
+}
+
+#problems .item {
+  position: relative;
+}
+
+#problems .item p {
+  margin-top: 4px;
+  margin-bottom: 58px;
+  font-size: 23px;
+  line-height: 29px;
+}
+
+#problems .arrow {
+  position: absolute;
+}
+
+#problems .arrow1 {
+  bottom: -36px;
+}
+
+#problems .arrow2 {
+  bottom: -15px;
+}
+
+#problems .arrow3 {
+  bottom: -10px;
+}
+
+#problems .arrow4 {
+  bottom: -28px;
+  left: -50px;
+}
+
+#problems .arrow5 {
+  bottom: -10px;
+  left: -60px;
+}
+
+#problems .bottom {
+  text-align: center;
+}
+
+#problems .bottom-border {
+  max-width: 996px;
+  margin: 58px auto 6px;
+  padding: 8px 0;
+  border-top: 3px solid #ce0c14;
+  border-bottom: 3px solid #ce0c14;
+  text-align: center;
+}
+
+#problems .bottom-border p {
+  margin: 0;
+  font-family: 'Phanton';
+  font-size: 30px;
+  line-height: 46px;
+  font-weight: 700;
+  text-transform: uppercase;
+  background-color: #f6d258;
+}

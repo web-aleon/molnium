@@ -1,0 +1,405 @@
+/* VAR*/
+@fontColor: #12171a; /*black*/
+@mainColor: #ce0c14; /*red*/
+@secColor: #f6d258; /*yellow*/
+
+
+/*MIXINS*/
+.size(@width, @height) {
+  width: @width;
+  height: @height;
+}
+
+/* FONTS */
+@font-face {
+  font-family: 'PhantonIconsA';
+  src: url('../fonts/Panton/PantonIconsAFill-Regular.otf'); 
+}
+@font-face {
+  font-family: 'PhantonIconsB';
+  src: url('../fonts/Panton/PantonIconsBFill-Regular.otf'); 
+}
+@font-face {
+  font-family: 'PhantonIconsC';
+  src: url('../fonts/Panton/PantonIconsCFill-Regular.otf'); 
+}
+@font-face {
+  font-family: 'PhantonIconsD';
+  src: url('../fonts/Panton/PantonIconsDFill-Regular.otf'); 
+}
+@font-face {
+    font-family: 'Phanton';
+    src: url('../fonts/Panton/Panton-Regular.otf');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Phanton';
+    src: url('../fonts/Panton/Panton-Bold.otf');
+    font-weight: 700;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Myriad';
+    src: url('../fonts/MyriadPro-Regular.otf');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Myriad';
+    src: url('../fonts/MyriadPro-Bold.otf');
+    font-weight: bold;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Raleway';
+    src: url('../fonts/Raleway-Regular.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+/*
+font-family: 'Open Sans', sans-serif;
+
+*/
+/* COMMON */
+@media (max-width: 1284px){
+	
+}
+@media (max-width: 991px){
+	
+}
+@media (max-width: 767px){
+	
+}
+*{
+  box-sizing: border-box;
+}
+body{
+  color: @fontColor;
+  font-family: 'Myriad';
+}
+a{
+  text-decoration: none;
+}
+h2{
+  text-align: center;
+  font-size: 30px;
+  line-height: 36px;
+  font-family: 'Phanton';
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #244e64;
+  margin: 0;
+}
+.container{
+  width: 1270px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+.container,
+.content-wrapper,
+.clearfix{
+  &:after, &:before{
+    content: "";
+    display: table;
+    table-layout: fixed;
+  }
+  &:after{
+    clear: both;
+  }
+}
+.ph-icon{
+  color: @mainColor;
+  font-weight: 400;
+  font-style: normal;
+}
+.ph-icon-a{
+  font-family: 'PhantonIconsA';
+}
+.ph-icon-b{
+  font-family: 'PhantonIconsB';
+}
+.ph-icon-c{
+  font-family: 'PhantonIconsC';
+}
+.ph-icon-d{
+  font-family: 'PhantonIconsD';
+}
+.fl-right{
+  float: right;
+}
+span.test{
+  font-family: 'Myriad';
+
+}
+
+/* HEADER */
+#header{
+  padding: 18px 0;
+  width: 100%;
+
+  a.logo{
+    float: left;
+  }
+  .header_contact{
+    float: left;
+    padding-top: 27px;
+    padding-bottom: 22px;
+    margin-left: 120px;
+  }
+  .header_contact-item{
+    float: left;
+    
+    &:nth-child(2){
+      margin: 0 92px 0 67px;
+    }
+  }
+  .ph-icon{
+    float: left;
+    font-size: 30px;
+    margin-right: 24px;
+  }
+  .icon-rotate{
+    transform: rotate(270deg);
+  }
+  .contact-info{
+    float: left;
+  }
+  .info-main{
+    display: block;
+    margin: 0;
+    color: #0a5072;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 21px;
+  }
+  .info-secondary{
+    display: block;
+    margin: 0;
+    color: #112526;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 16px;
+  }
+  .contact-info{
+    sup{
+      text-decoration: underline;
+    }
+  }
+}
+
+#banner{
+  background-color: @secColor;
+  width: 100%;
+  
+  .container{
+    background: url('../img/banner-men.png') no-repeat;
+    box-sizing: border-box;
+  }
+  .main-menu{
+    width: 100%;
+    margin-top: 31px;
+    text-align: center;
+  }
+  ul{
+    float: left;
+    list-style: none;
+    margin: 0 0 0 394px;
+    padding: 0;
+    text-align: center;
+  }
+  li{
+    float: left;
+    padding: 0;
+    margin-right: 11px;
+
+    &:last-child{
+      margin-right: 0;
+
+      a{
+        font-weight: bold;
+      }
+    }
+
+    a{
+      font-size: 18px;
+      line-height: 34px;
+      border: 3px solid #fff;
+      display: inline-block;
+      width: 129px;
+      color: @fontColor;
+
+      &:hover{
+        border: 3px solid @mainColor
+      }
+    }
+  }
+  .content-wrapper{
+    font-family: 'Phanton';
+    padding-top: 33px;
+    margin-bottom: 94px;
+  }
+  .text-block{
+    float: left;
+    max-width: 370px;
+
+    h1{
+      margin: 17px 0 0;
+      font-size: 37px;
+      font-weight: 700;
+    }
+    .stars{
+      padding-left: 93px;
+      margin-top: 10px;
+      margin-bottom: 10px;
+
+      img{
+        margin-right: 15px;
+      }
+    }
+    p{
+      margin: 0;
+      max-width: 340px;
+      font-size: 22px
+    }
+  }
+  .form{
+    float: left;
+    width: 352px;
+    margin-left: 51px;
+    padding: 22px 18px 41px;
+    border: 7px solid #f8f8f8;
+    text-align: center;
+
+    p{
+      margin: 0 0 9px;
+      font-size: 21px;
+      font-weight: bold;
+      text-align: center;
+    }
+
+    input{
+      display: block;
+      width: 100%;
+      border: none;
+      padding: 0 15px;
+      border-radius: 5px;
+      line-height: 62px;
+      margin-bottom: 17px;
+    }
+    button{
+      .size(223px, 55px);
+      background-color: @mainColor;
+      text-align: center;
+      border: none;
+      border-radius: 5px;
+      border-top: 1px solid #740b0f;
+      border-bottom: 3px solid #740b0f;
+      color: #fff;
+      font-size: 20px;
+      font-weight: 600;
+      text-transform: uppercase;
+
+      &:hover{
+        background-color: #740b0f;
+      }
+    }
+  }
+}
+/* AFTER BANNER DIVIDER */
+.banner-divider{
+  background-color: transparent;
+  width: 100%;
+  height: 170px;
+  background: url('../img/banner-divider.png') no-repeat;
+  background-size: 100% 100%;
+  background-position: 50% 50%;
+  margin-top: -170px;
+
+  @media (max-width: 1600px){
+    height: 150px;
+    margin-top: -150px;
+  }
+  @media (max-width: 1284px){
+  
+  }
+}
+
+/*PROBLEMS SECTION*/
+#problems{
+  padding-bottom: 11px;
+  background-color: #f8f8f8;
+
+  .content{
+    margin-top: 28px;
+  }
+  .left, .right, .main{
+    float: left;
+  }
+  .left{
+    width: 280px;
+    margin-top: 115px;
+    margin-right: 4px;
+  }
+  .right{
+    width: 250px;
+    margin-top: 125px;
+    margin-left: 50px;
+  }
+  .item{
+    position: relative;
+
+    p{
+      margin-top: 4px;
+      margin-bottom: 58px;
+      font-size: 23px;
+      line-height: 29px;
+    }
+  }
+  .arrow{
+    position: absolute;
+  }
+  .arrow1{
+    bottom: -36px;
+  }
+  .arrow2{
+    bottom: -15px;
+  }
+  .arrow3{
+    bottom: -10px;
+  }
+  .arrow4{
+    bottom: -28px;
+    left: -50px;
+  }
+  .arrow5{
+    bottom: -10px;
+    left: -60px
+  }
+  
+  .bottom{
+    text-align: center;
+  }
+  .bottom-border{
+    max-width: 996px;
+    margin: 58px auto 6px;
+    padding: 8px 0;
+    border-top: 3px solid @mainColor;
+    border-bottom: 3px solid @mainColor;
+    text-align: center;
+
+    p{
+      margin: 0;
+      font-family: 'Phanton';
+      font-size: 30px;
+      line-height: 46px;
+      font-weight: 700;
+      text-transform: uppercase;
+      background-color: @secColor;
+    }
+  }
+  .down-arrow{
+    
+  }
+
+}
