@@ -473,7 +473,6 @@ button.btn:hover {
   width: 880px;
   margin: 21px auto 40px;
   font-family: 'Phanton', sans-serif;
-  color: #112526;
   font-size: 25px;
   line-height: 28px;
   text-align: center;
@@ -536,7 +535,6 @@ button.btn:hover {
   line-height: 28px;
   font-weight: 700;
   text-transform: uppercase;
-  color: #343131;
 }
 
 #solutions h3 span {
@@ -560,7 +558,6 @@ button.btn:hover {
   font-style: italic;
   font-size: 16px;
   line-height: 24px;
-  color: #1a1818;
 }
 
 #solutions .list-title {
@@ -732,7 +729,6 @@ button.btn:hover {
 #clients h3 {
   margin: 1px 0 19px;
   width: 180px;
-  color: #0d0e0e;
   font-weight: 600;
   font-size: 18px;
   line-height: 18px;
