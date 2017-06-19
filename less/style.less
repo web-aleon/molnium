@@ -1352,22 +1352,21 @@ span.test{
       h3{
         padding-left: 11px;
       }
-      .ph-icon, .foot-contact-item, .contact-info, p{
+      .icon-box, .ph-icon, .foot-contact-item, .contact-info, p{
         float: left;
+      }
+      .icon-box{
+        margin-right: 20px;
+        width: 36px;
+        text-align: center;
       }
       .ph-icon{
         font-size: 30px;
-        margin-right: 24px;
-      }
-      .ph-icon-a{
-        margin-right: 29px;
-      }
-      .ph-icon-d{
-        margin-right: 20px;
+        width: 36px;
       }
       .foot-contact-item{
         width: 100%;
-        margin-bottom: 38px;
+        margin-bottom: 28px;
 
         &.fc-phone{
           p{
@@ -1397,5 +1396,38 @@ span.test{
   /*Content BOTTOM*/
   .content-bottom{
     padding-top: 64px;
+
+    ul{
+      padding-left: 20px;
+      list-style-image: url('../img/footer-list.png');
+
+      li{
+        margin-bottom: 15px;
+
+        &:last-child{
+          margin-bottom: 0;
+        }
+        a{
+          border-bottom: 1px solid #fff;
+          font-size: 17px;
+          font-weight: 700;
+        }
+      }
+    }
+    .col1{
+      padding-left: 7px;
+      
+      a{
+        margin-right: 16px;
+      }
+      p{
+        margin-top: 36px;
+        font-size: 17px;
+        font-style: italic;
+      }
+    }
+    .col2{
+
+    }
   }
 }

@@ -1548,6 +1548,7 @@ span.test {
   padding-left: 11px;
 }
 
+#footer .content-top .col3 .icon-box,
 #footer .content-top .col3 .ph-icon,
 #footer .content-top .col3 .foot-contact-item,
 #footer .content-top .col3 .contact-info,
@@ -1555,22 +1556,20 @@ span.test {
   float: left;
 }
 
+#footer .content-top .col3 .icon-box {
+  margin-right: 20px;
+  width: 36px;
+  text-align: center;
+}
+
 #footer .content-top .col3 .ph-icon {
   font-size: 30px;
-  margin-right: 24px;
-}
-
-#footer .content-top .col3 .ph-icon-a {
-  margin-right: 29px;
-}
-
-#footer .content-top .col3 .ph-icon-d {
-  margin-right: 20px;
+  width: 36px;
 }
 
 #footer .content-top .col3 .foot-contact-item {
   width: 100%;
-  margin-bottom: 38px;
+  margin-bottom: 28px;
 }
 
 #footer .content-top .col3 .foot-contact-item.fc-phone p {
@@ -1598,4 +1597,37 @@ span.test {
 
 #footer .content-bottom {
   padding-top: 64px;
+}
+
+#footer .content-bottom ul {
+  padding-left: 20px;
+  list-style-image: url("../img/footer-list.png");
+}
+
+#footer .content-bottom ul li {
+  margin-bottom: 15px;
+}
+
+#footer .content-bottom ul li:last-child {
+  margin-bottom: 0;
+}
+
+#footer .content-bottom ul li a {
+  border-bottom: 1px solid #fff;
+  font-size: 17px;
+  font-weight: 700;
+}
+
+#footer .content-bottom .col1 {
+  padding-left: 7px;
+}
+
+#footer .content-bottom .col1 a {
+  margin-right: 16px;
+}
+
+#footer .content-bottom .col1 p {
+  margin-top: 36px;
+  font-size: 17px;
+  font-style: italic;
 }
