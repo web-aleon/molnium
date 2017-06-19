@@ -145,6 +145,24 @@ h2{
 .no-wrap{
   white-space: nowrap;
 }
+button.btn{
+  background-color: @mainColor;
+  text-align: center;
+  border: none;
+  border-radius: 5px;
+  border-top: 2px solid #740b0f;
+  border-bottom: 2px solid #740b0f;
+  color: #fff;
+  padding-top: 3px;
+  font-size: 20px;
+  font-weight: 600;
+  text-transform: uppercase;
+  transition: 0.3s all;
+
+  &:hover{
+    background-color: #740b0f;
+  }
+}
 span.test{
   font-family: 'Myriad', sans-serif;
 }
@@ -309,21 +327,6 @@ span.test{
     }
     button{
       .size(223px, 55px);
-      background-color: @mainColor;
-      text-align: center;
-      border: none;
-      border-radius: 5px;
-      border-top: 2px solid #740b0f;
-      border-bottom: 2px solid #740b0f;
-      color: #fff;
-      font-size: 20px;
-      font-weight: 600;
-      text-transform: uppercase;
-      transition: 0.3s all;
-
-      &:hover{
-        background-color: #740b0f;
-      }
     }
   }
 }
@@ -824,7 +827,11 @@ span.test{
 #crisis{
   padding: 42px 0 12px;
   background-color: rgba(204, 204, 204, 0.35);
-
+  
+  h2{
+    max-width: 700px;
+    margin: 0 auto 16px;
+  }
   .content{
     padding-right: 46px;
     padding-left: 54px;
@@ -856,5 +863,207 @@ span.test{
 
 /* UTP */
 #utp{
+  padding: 69px 0 57px;
   
+  .desc{
+    max-width: 970px;
+    margin: 4px auto 7px;
+    font-size: 21px;
+    line-height: 27px;
+    text-align: center;
+  }
+  .content{
+    padding-left: 25px;
+  }
+  .text, h3, .text-desc, img{
+    float: left;
+  }
+  .text{
+    max-width: 725px;
+    margin-right: 35px;
+  }
+  .title{
+    color: #5688a3;
+    margin-top: 40px;
+    margin-bottom: 4px;
+  }
+  h3{
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-right: 46px;
+    font-size: 160px;
+    line-height: 140px;
+  }
+  .text-desc{
+    max-width: 350px;
+    margin-top: 20px;
+    margin-bottom: 0;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 29px;
+  }
+  .divider{
+    width: 454px;
+    height: 2px;
+    margin: 0 auto;
+    background-color: #f00;
+  }
+  p.main{
+    margin: 17px 0 19px;
+    font-size: 21px;
+    line-height: 35px;
+  }
+  p.bottom{
+    margin-top: 49px;
+    margin-bottom: 0;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 30px;
+    text-align: center;
+    text-transform: uppercase;
+  }
+}
+
+/* AUDIT */
+#audit{
+  background-color: #005e7f;
+  color: #fff;
+  
+  .container{
+    padding: 62px 0 120px;
+    background: url('../img/audit.png') no-repeat;
+    background-position: 100px 50px;
+  }
+  .content{
+    float: right;
+    width: 800px;
+    padding-right: 30px;
+  }
+  h2{
+    color: #fff;
+    max-width: 705px;
+    line-height: 30px;
+  }
+  .desc{
+    margin: 0;
+    max-width: 705px;
+    font-size: 21px;
+    line-height: 30px;
+    color: @secColor;
+    text-transform: uppercase;
+    font-weight: 700;
+    text-align: center;
+  }
+  .main{
+    margin-top: 17px;
+    margin-bottom: 54px ;
+    font-size: 20px;
+    line-height: 30px;
+    padding-right: 20px;
+    text-align: justify;
+  }
+  button{
+    .size(346px, 55px);
+    margin-left: 31px;
+  }
+}
+.audit-divider{
+  background-color: transparent;
+  width: 100%;
+  height: 170px;
+  background: url('../img/audit-divider.png') no-repeat;
+  background-size: 100% 100%;
+  background-position: 50% 50%;
+  margin-top: -170px;
+
+  /*@media (max-width: 1600px){
+    height: 150px;
+    margin-top: -150px;
+  }
+  @media (max-width: 1284px){
+  
+  }*/
+}
+
+/*MARKETING*/
+#marketing{
+  background-color: #E8E8E8;
+  padding-bottom: 44px;
+  
+  .content{
+    padding: 0 30px;
+  }
+  .left, .right, .img, .text{
+    float: left;
+  }
+  .left{
+    max-width: 440px;
+    margin-right: 75px;
+
+    h2{
+      text-align: left;
+      margin-top: 165px;
+      line-height: 43px;
+    }
+    .desc{
+      margin: 25px 0;
+      font-size: 21px;
+      line-height: 31px;
+
+    }
+  }
+  .right{
+    max-width: 645px;
+    
+    .item{
+      margin-bottom: 40px;
+
+      &:last-child{
+        margin-bottom: 0;
+      }
+    }
+    .img{
+      text-align: center;
+      width: 143px;
+      margin-right: 30px;
+    }
+    .text{
+      max-width: 470px;
+
+      h3{
+        max-width: 453px;
+        margin: 0 0 24px;
+        font-size: 21px;
+        font-weight: 700;
+        line-height: 24px;
+        text-transform: uppercase;
+      }
+      p{
+        margin: 0;
+        font-size: 18px;
+        font-style: italic;
+        line-height: 25px;
+      }
+    }
+  }
+}
+
+/*RESULTS*/
+#results{
+  padding: 90px 0 56px;
+
+  h2{
+    font-size: 27px;
+  }
+  .left, .right{
+    float: left;
+  }
+  .left{
+    position: relative;
+
+    .dot{
+      position: absolute;
+    }
+  }
+
 }
