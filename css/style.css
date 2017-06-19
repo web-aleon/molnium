@@ -66,6 +66,13 @@
 }
 
 @font-face {
+  font-family: 'Myriad';
+  src: url("../fonts/MyriadPro-It.otf");
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
   font-family: 'Raleway';
   src: url("../fonts/Raleway-Regular.ttf");
   font-weight: normal;
@@ -154,6 +161,10 @@ h2 {
 
 .ttu {
   text-transform: uppercase;
+}
+
+.no-wrap {
+  white-space: nowrap;
 }
 
 span.test {
@@ -808,9 +819,163 @@ span.test {
 #technics {
   padding-bottom: 80px;
   background-color: #f6d258;
+  /*Content TOP*/
+  /*Content MIDDLE*/
+  /*Content BOTTOM*/
 }
 
 #technics h2 {
   max-width: 740px;
   margin: 0 auto;
 }
+
+#technics .content-top {
+  margin-top: 33px;
+  padding: 0 46px;
+}
+
+#technics .content-top p {
+  margin: 0;
+}
+
+#technics .left,
+#technics .mid,
+#technics .right {
+  float: left;
+}
+
+#technics .left,
+#technics .right {
+  border-top: 3px solid #292929;
+}
+
+#technics .left {
+  max-width: 463px;
+  padding: 12px 30px 0 0;
+  font-size: 22px;
+}
+
+#technics .mid {
+  margin: 0 33px 0 43px;
+}
+
+#technics .dots {
+  width: 100%;
+  text-align: center;
+}
+
+#technics .dots img {
+  display: inline-block;
+  margin-top: 24px;
+  position: relative;
+}
+
+#technics .dots img:nth-child(1),
+#technics .dots img:nth-child(5) {
+  top: -23px;
+}
+
+#technics .dots img:nth-child(2),
+#technics .dots img:nth-child(4) {
+  top: -8px;
+}
+
+#technics .dots img:nth-child(3) {
+  margin: 0 5px;
+}
+
+#technics .right {
+  max-width: 465px;
+  padding: 10px 8px 3px;
+  font-size: 17px;
+}
+
+#technics .right span {
+  background-color: #9cbec6;
+}
+
+#technics .content-mid {
+  width: 100%;
+  margin-top: 57px;
+  margin-bottom: 23px;
+  padding: 22px 101px 14px;
+  font-style: italic;
+  font-size: 24px;
+  line-height: 28px;
+  text-align: center;
+  border: 3px solid #f00;
+}
+
+#technics .content-mid p {
+  margin: 0;
+}
+
+#technics .content-bottom {
+  padding: 0 15px;
+}
+
+#technics .content-bottom .item {
+  float: left;
+  width: 20%;
+  padding: 0 15px;
+  text-align: center;
+}
+
+#technics .content-bottom .item p {
+  text-align: left;
+  font-size: 19px;
+  margin: 24px auto 0;
+}
+
+#technics .content-bottom .item:nth-child(2) {
+  padding: 0;
+}
+
+#technics .content-bottom .item:nth-child(3) {
+  padding: 0 0 0 10px;
+}
+
+#technics .content-bottom .item:nth-child(5) p {
+  width: 175px;
+}
+
+/* CRISIS */
+
+#crisis {
+  padding: 42px 0 12px;
+  background-color: rgba(204, 204, 204, 0.35);
+}
+
+#crisis .content {
+  padding-right: 46px;
+  padding-left: 54px;
+}
+
+#crisis img,
+#crisis .text {
+  float: left;
+}
+
+#crisis .text {
+  max-width: 530px;
+  margin-left: 42px;
+}
+
+#crisis .text .main {
+  margin-top: 56px;
+  margin-bottom: 12px;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+#crisis .text .bottom {
+  border-top: 2px solid #f00;
+  padding-top: 17px;
+  margin: 0;
+  color: #005e7f;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 28px;
+}
+
+/* UTP */
