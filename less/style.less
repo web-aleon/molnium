@@ -103,11 +103,20 @@ h2{
   text-transform: uppercase;
   color: #244e64;
   margin: 0;
+
+  @media (max-width: 1284px){
+    font-size: 27px;    
+  }
 }
 .container{
   width: 1270px;
   margin: 0 auto;
   padding: 0 20px;
+
+  @media (max-width: 1284px){
+    width: 992px;
+    padding: 0 15px;
+  }
 }
 .container,
 .content-wrapper,
@@ -164,6 +173,12 @@ button.btn{
   text-transform: uppercase;
   transition: 0.3s all;
 
+  @media (max-width: 1284px){
+    font-size: 16px; 
+    border-top-width: 1px;
+    border-bottom-width: 1px;
+  }
+
   &:hover{
     background-color: #740b0f;
   }
@@ -176,18 +191,35 @@ button.btn{
 
   a.logo{
     float: left;
+    
+    img{
+      @media (max-width: 1284px){
+        width: 283px;
+        height: auto;
+      }
+    }
   }
   .header_contact{
     float: left;
     padding-top: 27px;
     padding-bottom: 22px;
     margin-left: 120px;
+
+    @media (max-width: 1284px){
+      margin-left: 90px;
+      padding-top: 21px;
+      padding-bottom: 17px;
+    }
   }
   .header_contact-item{
     float: left;
     
     &:nth-child(2){
       margin: 0 92px 0 67px;
+
+      @media (max-width: 1284px){
+        margin: 0 71px 0 52px;
+      }
     }
   }
   .contact-info{
@@ -197,6 +229,11 @@ button.btn{
     float: left;
     font-size: 30px;
     margin-right: 24px;
+
+    @media (max-width: 1284px){
+      margin-right: 18px;
+      font-size: 23px;
+    }
   }
   .info-main{
     display: block;
@@ -205,6 +242,11 @@ button.btn{
     font-size: 18px;
     font-weight: 700;
     line-height: 21px;
+
+    @media (max-width: 1284px){
+      line-height: 17px;
+      font-size: 16px; 
+    }
   }
   .info-secondary{
     display: block;
@@ -213,6 +255,11 @@ button.btn{
     font-size: 16px;
     font-weight: 400;
     line-height: 16px;
+
+    @media (max-width: 1284px){
+      font-size: 14px; 
+      line-height: 14px;
+    }
   }
   .contact-info{
     sup{
@@ -228,11 +275,20 @@ button.btn{
   .container{
     background: url('../img/banner-men.png') no-repeat;
     box-sizing: border-box;
+
+    @media (max-width: 1284px){
+     background-size: 324px auto; 
+     background-position: left bottom;
+    }
   }
   .main-menu{
     width: 100%;
     margin-top: 31px;
     text-align: center;
+
+    @media (max-width: 1284px){
+      margin-top: 25px;
+    }
   }
   ul{
     float: left;
@@ -240,6 +296,10 @@ button.btn{
     margin: 0 0 0 394px;
     padding: 0;
     text-align: center;
+
+    @media (max-width: 1284px){
+      margin-left: 307px;
+    }
   }
   li{
     float: left;
@@ -262,12 +322,22 @@ button.btn{
       width: 129px;
       color: @fontColor;
 
+      @media (max-width: 1284px){
+        width: 100px;
+        font-size: 15px;
+        line-height: 26px;
+      }
+
       &:hover{
         border: 3px solid @mainColor
       }
       &.ttu{
         line-height: 31px;
         padding-top: 3px;
+
+        @media (max-width: 1284px){
+          line-height: 23px;
+        }
       }
     }
   }
@@ -275,29 +345,58 @@ button.btn{
     font-family: 'Phanton', sans-serif;
     padding-top: 33px;
     margin-bottom: 94px;
+
+    @media (max-width: 1284px){
+      padding-top: 26px;
+      margin-bottom: 85px; 
+    }
   }
   .text-block{
     float: left;
     max-width: 370px;
 
+    @media (max-width: 1284px){
+      max-width: 288px;
+    }
+
     h1{
       margin: 17px 0 0;
       font-size: 37px;
       font-weight: 700;
+
+      @media (max-width: 1284px){
+        font-size: 26px;
+        margin-top: 14px;
+      }
     }
     .stars{
       padding-left: 93px;
       margin-top: 10px;
       margin-bottom: 10px;
 
+      @media (max-width: 1284px){
+        padding-left: 73px;
+        margin-top: 8px;
+        margin-bottom: 8px;
+      }
+
       img{
         margin-right: 15px;
+        
+        @media (max-width: 1284px){
+          margin-right: 9px;
+        }
       }
     }
     p{
       margin: 0;
       max-width: 340px;
-      font-size: 22px
+      font-size: 22px;
+
+      @media (max-width: 1284px){
+        max-width: 260px;
+        font-size: 18px;
+      }
     }
   }
   .form{
@@ -308,11 +407,22 @@ button.btn{
     border: 7px solid #f8f8f8;
     text-align: center;
 
+    @media (max-width: 1284px){
+      margin-left: 39px;
+      width: 274px;
+      padding: 18px 15px 41px;
+    }
+
     p{
       margin: 0 0 9px;
       font-size: 21px;
       font-weight: bold;
       text-align: center;
+
+      @media (max-width: 1284px){
+        font-size: 18px;
+        margin-bottom: 7px;
+      }
     }
 
     input{
@@ -323,9 +433,20 @@ button.btn{
       border-radius: 5px;
       line-height: 62px;
       margin-bottom: 17px;
+
+      @media (max-width: 1284px){
+        line-height: 38px;
+        margin-bottom: 13px;
+        font-size: 14px;
+        padding-top: 3px;
+      }
     }
     button{
       .size(223px, 55px);
+
+      @media (max-width: 1284px){
+        .size(173px, 38px);
+      }
     }
   }
 }
@@ -344,7 +465,8 @@ button.btn{
     margin-top: -150px;
   }
   @media (max-width: 1284px){
-  
+    height: 140px;
+    margin-top: -140px;
   }
 }
 
@@ -358,49 +480,111 @@ button.btn{
   }
   .content{
     margin-top: 28px;
+
+    @media (max-width: 1284px){
+      margin-top: 20px;
+    }
   }
   .left, .right, .main{
     float: left;
+  }
+  .main{
+    width: 504px;
+    height: auto;
   }
   .left{
     width: 275px;
     margin-top: 115px;
     margin-right: 4px;
+
+    @media (max-width: 1284px){
+     width: 214px;
+     margin-top: 85px;
+    }
   }
   .right{
     width: 250px;
     margin-top: 125px;
     margin-left: 50px;
+
+    @media (max-width: 1284px){
+     width: 195px;
+     margin-left: 39px;
+     margin-top: 100px;
+    }
   }
   .item{
     position: relative;
-
+    
+    .icon{
+      @media (max-width: 1284px){
+        height: 22px;
+        width: auto;
+      }
+    }
     p{
       margin-top: 4px;
       margin-bottom: 58px;
       font-size: 21px;
       line-height: 29px;
+
+      @media (max-width: 1284px){
+        font-size: 16px;
+        line-height: 24px;
+        margin-bottom: 40px;
+      }
     }
   }
   .arrow{
     position: absolute;
+    
+    @media (max-width: 1284px){
+      width: 100%;
+    }
+    
   }
   .arrow1{
     bottom: -36px;
+
+    @media (max-width: 1284px){
+     bottom: -30px;
+    }
+   
   }
   .arrow2{
     bottom: -15px;
+    
+    @media (max-width: 1284px){
+     bottom: -12px;
+    }
   }
   .arrow3{
     bottom: -10px;
+
+    @media (max-width: 1284px){
+     bottom: -8px;
+     width: 260px;
+    }
   }
   .arrow4{
     bottom: -28px;
     left: -50px;
+
+    @media (max-width: 1284px){
+      bottom: -23px;
+      left: -39px;
+      width: 210px;
+    }
   }
   .arrow5{
     bottom: -10px;
-    left: -60px
+    left: -60px;
+
+    @media (max-width: 1284px){
+      bottom: -8px;
+      left: -60px;
+      width: 230px;
+    }
   }
   
   .bottom{
@@ -450,6 +634,11 @@ button.btn{
     width: 377px;
     margin: 0 4px;
     border: 2px solid #0a435e;
+
+    @media (max-width: 1284px){
+      width: 288px;
+      margin: 0 3px;
+    }
   }
     .inner-wrapper{
       padding: 39px 10px 0;
@@ -479,6 +668,13 @@ button.btn{
     font-size: 71px;
     line-height: 71px;
     font-weight: 700;
+
+    @media (max-width: 1284px){
+      .size(48px, 48px);
+      font-size: 55px;
+      line-height: 55px;
+      padding-left: 16px;
+    }
   }
   h3{
     margin: 10px 0 0 10px;
@@ -488,6 +684,13 @@ button.btn{
     line-height: 28px;
     font-weight: 700;
     text-transform: uppercase;
+
+    @media (max-width: 1284px){
+      width: 205px;
+      margin: 4px 0 0 8px;
+      font-size: 23px;
+      line-height: 23px;
+    }
   
     span{
       color: @mainColor;
@@ -509,6 +712,12 @@ button.btn{
     font-style: italic;
     font-size: 16px;
     line-height: 24px;
+
+    @media (max-width: 1284px){
+     font-size: 15px;
+     line-height: 21px;
+     min-height: 84px;
+    }
   }
   .list-title{
     margin-top: 18px;
@@ -528,6 +737,12 @@ button.btn{
     font-size: 18px;
     line-height: 17px;
     margin-bottom: 7px;
+
+    @media (max-width: 1284px){
+      font-size: 15px;
+      line-height: 15px;
+      margin-bottom: 6px;
+    }
     
     &:last-child{
       min-height: 51px;
@@ -542,6 +757,10 @@ button.btn{
       width: 325px;
       margin: 0;
       position: relative;
+
+      @media (max-width: 1284px){
+        width: 239px;
+      }
     }
   }
 
@@ -551,12 +770,25 @@ button.btn{
     img, p{
       float: left;
     }
+    img{
+      @media (max-width: 1284px){
+        width: 51px;
+        height: auto;
+      }
+    }
     p{
       width: 994px;
       margin: 13px 8px 0;
       padding: 7px 55px 11px;
       background: @secColor;
       font-size: 20px;
+
+      @media (max-width: 1284px){
+        width: 760px;
+        font-size: 16px;
+        margin-top: 9px;
+        padding: 5px 35px 7px;
+      }
 
       span{
         color: @mainColor;
@@ -570,15 +802,35 @@ button.btn{
 #interessmore{
   padding: 96px 0 56px;
   background-color: rgba(204, 204, 204, 0.35);
+
+  @media (max-width: 1284px){
+    padding: 75px 0 40px;     
+  }
   
   .content{
     margin-top: 82px;
+
+    @media (max-width: 1284px){
+     margin-top: 55px; 
+    }
   }
   .item{
     float: left;
     width: 20%;
     padding: 0 12px;
     text-align: center;
+    
+    @media (max-width: 1284px){
+      padding-top: 19px;  
+    }
+
+    img{
+      @media (max-width: 1284px){
+        height: 93px;
+        width: auto;
+      } 
+    }
+    
   }
   .item2, .item3, .item4{
     padding-top: 21px;
@@ -605,6 +857,11 @@ button.btn{
     font-size: 24px;
     font-weight: 700;
     line-height: 26px;
+
+    @media (max-width: 1284px){
+      font-size: 19px;
+      line-height: 21px; 
+    }
   }
   .divider{
     .size(48px, 2px);
@@ -616,6 +873,11 @@ button.btn{
     margin: 0;
     font-size: 16px;
     line-height: 24px;
+
+    @media (max-width: 1284px){
+      font-size: 14px; 
+      line-height: 20px;
+    }
   }
 
 }
@@ -623,6 +885,10 @@ button.btn{
 /* CLIENTS */
 #clients{
   padding-top: 56px;
+  
+  @media (max-width: 1284px){
+    padding-top: 40px;    
+  }
 
   .content{
     position: relative;
@@ -631,30 +897,66 @@ button.btn{
     width: 100%;
     padding-top: 270px;
     background: url('../img/clientsbg.png') 50% 50% no-repeat;
+
+    @media (max-width: 1284px){
+      padding-top: 250px;
+    }
   }
   .item{
     position: absolute;
     text-align: center;
+
+    img{
+      @media (max-width: 1284px){
+        width: 130px;
+        height: auto;
+      }
+    }
   }
   .item1{
     top: -85px;
     left: 508px;
+
+    @media (max-width: 1284px){
+      top: -55px;
+      left: 408px;
+    }
   }
   .item2{
     top: 95px;
     left: 206px;
+
+    @media (max-width: 1284px){
+      top: 130px;
+      left: 96px;
+    }
   }
   .item3{
     top: 95px;
     left: 867px;
+
+    @media (max-width: 1284px){
+      top: 130px;
+      left: 697px;
+    }
   }
   .item4{
     top: 446px;
     left: 293px;
+
+    @media (max-width: 1284px){
+      top: 446px;
+      left: 143px;
+    }
   }
   .item5{
     top: 446px;
     left: 775px;
+
+    @media (max-width: 1284px){
+      top: 446px;
+      left: 675px;
+    }
   }
   h3{
     margin: 1px 0 19px;
@@ -662,6 +964,10 @@ button.btn{
     font-weight: 600;
     font-size: 18px;
     line-height: 18px;
+
+    @media (max-width: 1284px){
+     margin-bottom: 12px; 
+    }
   }
   .more{
     .size(149px, 41px);
@@ -677,6 +983,11 @@ button.btn{
     cursor: pointer;
     transition: 0.3s all;
 
+    @media (max-width: 1284px){
+      .size(110px, 35px);
+      line-height: 35px;
+    }
+
     &:hover{
        background-color: #740b0f;
     }
@@ -685,6 +996,10 @@ button.btn{
   .list{
     margin: 0 auto;
     max-width: 417px;
+
+    @media (max-width: 1284px){
+     max-width: 380px; 
+    }
   }
   .list-title{
     padding: 6px 6px 2px;
@@ -693,6 +1008,11 @@ button.btn{
     line-height: 19px;
     font-weight: 700;
     background-color: @secColor;
+
+    @media (max-width: 1284px){
+      font-size: 17px;
+      line-height: 17px;
+    }
   }
   ul{
     list-style-image: url('../img/client-list.png');
@@ -726,6 +1046,10 @@ button.btn{
     margin-top: 33px;
     padding: 0 46px;
 
+    @media (max-width: 1284px){
+      padding: 0 30px; 
+    }
+
     p{
       margin: 0;
     }
@@ -740,9 +1064,25 @@ button.btn{
     max-width: 463px;
     padding: 12px 30px 0 0;
     font-size: 22px;
+
+    @media (max-width: 1284px){
+      max-width: 355px;
+      font-size: 18px;
+      padding-right: 15px;
+    }
   }
   .mid{
     margin: 0 33px 0 43px;
+
+    @media (max-width: 1284px){
+      margin: 0 26px 0 33px;
+    }
+  }
+  .main{
+    @media (max-width: 1284px){
+      width: 103px;
+      height: auto;
+    }
   }
   .dots{
     width: 100%;
@@ -752,6 +1092,13 @@ button.btn{
       display: inline-block;
       margin-top: 24px;
       position: relative;
+
+      @media (max-width: 1284px){
+        width: 16px;
+        height: auto;
+        margin-top: 24px;
+      }
+
       &:nth-child(1), &:nth-child(5){
         top: -23px;
       }
@@ -767,6 +1114,11 @@ button.btn{
     max-width: 465px;
     padding: 10px 8px 3px;
     font-size: 17px;
+
+    @media (max-width: 1284px){
+      max-width: 355px;
+      font-size: 15px;
+    }
 
     span{
       background-color: #9cbec6;
@@ -784,6 +1136,12 @@ button.btn{
     text-align: center;
     border: 3px solid #f00;
 
+    @media (max-width: 1284px){
+     font-size: 20px;
+     line-height: 26px; 
+     padding: 18px 70px 14px;
+    }
+    
     p{
       margin: 0;
     }
@@ -797,10 +1155,26 @@ button.btn{
       padding: 0 15px;
       text-align: center;
 
+      img{
+        @media (max-width: 1284px){
+          width: 128px;
+          height: auto;
+        }
+      }
+
       p{
         text-align: left;
         font-size: 19px;
         margin: 24px auto 0;
+
+        @media (max-width: 1284px){
+          font-size: 15px;
+          margin-top: 18px;
+        }
+
+        .no-mobile{
+          
+        }
       }
       &:nth-child(2){
         padding: 0;
@@ -830,19 +1204,38 @@ button.btn{
   .content{
     padding-right: 46px;
     padding-left: 54px;
+
+    @media (max-width: 1284px){
+      padding: 0 30px; 
+    }
   }
   img, .text{
     float: left;
   }
+  img{
+    height: auto;
+    width: 435px;
+  }
   .text{
     max-width: 530px;
     margin-left: 42px;
+
+    @media (max-width: 1284px){
+      max-width: 413px;
+      margin-left: 30px;
+    }
 
     .main{
       margin-top: 56px;
       margin-bottom: 12px;
       font-size: 15px;
       line-height: 20px;
+
+      @media (max-width: 1284px){
+        margin-top: 15px;
+        font-size: 14px;
+        line-height: 18px;
+      }
     }
     .bottom{
       border-top: 2px solid #f00;
@@ -852,6 +1245,11 @@ button.btn{
       font-size: 20px;
       font-weight: 600;
       line-height: 28px;
+
+      @media (max-width: 1284px){
+        font-size: 18px;
+        line-height: 25px;
+      }
     }
   }
 }
@@ -876,6 +1274,17 @@ button.btn{
   .text{
     max-width: 725px;
     margin-right: 35px;
+
+    @media (max-width: 1284px){
+      max-width: 568px;
+      margin-right: 25px;  
+    }
+  }
+  img{
+    @media (max-width: 1284px){
+      width: 341px;
+      height: auto;
+    }
   }
   .title{
     color: #5688a3;
@@ -888,6 +1297,12 @@ button.btn{
     margin-right: 46px;
     font-size: 160px;
     line-height: 140px;
+
+    @media (max-width: 1284px){
+     font-size: 120px;
+     line-height: 100px; 
+     margin-right: 35px;
+    }
   }
   .text-desc{
     max-width: 350px;
@@ -896,6 +1311,13 @@ button.btn{
     font-size: 20px;
     font-weight: 600;
     line-height: 29px;
+
+    @media (max-width: 1284px){
+      max-width: 273px;
+      margin-top: 5px;
+      font-size: 16px;
+      line-height: 25px; 
+    }
   }
   .divider{
     width: 454px;
@@ -907,6 +1329,11 @@ button.btn{
     margin: 17px 0 19px;
     font-size: 20px;
     line-height: 35px;
+
+    @media (max-width: 1284px){
+      font-size: 16px;
+      line-height: 25px; 
+    }
   }
   p.bottom{
     margin-top: 49px;
@@ -916,6 +1343,11 @@ button.btn{
     line-height: 30px;
     text-align: center;
     text-transform: uppercase;
+
+    @media (max-width: 1284px){
+      font-size: 24px;
+      line-height: 24px; 
+    }
   }
 }
 

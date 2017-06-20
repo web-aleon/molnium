@@ -91,10 +91,23 @@ h2 {
   margin: 0;
 }
 
+@media (max-width: 1284px) {
+  h2 {
+    font-size: 27px;
+  }
+}
+
 .container {
   width: 1270px;
   margin: 0 auto;
   padding: 0 20px;
+}
+
+@media (max-width: 1284px) {
+  .container {
+    width: 992px;
+    padding: 0 15px;
+  }
 }
 
 .container:after,
@@ -167,6 +180,14 @@ button.btn {
   transition: 0.3s all;
 }
 
+@media (max-width: 1284px) {
+  button.btn {
+    font-size: 16px;
+    border-top-width: 1px;
+    border-bottom-width: 1px;
+  }
+}
+
 button.btn:hover {
   background-color: #740b0f;
 }
@@ -182,11 +203,26 @@ button.btn:hover {
   float: left;
 }
 
+@media (max-width: 1284px) {
+  #header a.logo img {
+    width: 283px;
+    height: auto;
+  }
+}
+
 #header .header_contact {
   float: left;
   padding-top: 27px;
   padding-bottom: 22px;
   margin-left: 120px;
+}
+
+@media (max-width: 1284px) {
+  #header .header_contact {
+    margin-left: 90px;
+    padding-top: 21px;
+    padding-bottom: 17px;
+  }
 }
 
 #header .header_contact-item {
@@ -195,6 +231,12 @@ button.btn:hover {
 
 #header .header_contact-item:nth-child(2) {
   margin: 0 92px 0 67px;
+}
+
+@media (max-width: 1284px) {
+  #header .header_contact-item:nth-child(2) {
+    margin: 0 71px 0 52px;
+  }
 }
 
 #header .contact-info {
@@ -207,6 +249,13 @@ button.btn:hover {
   margin-right: 24px;
 }
 
+@media (max-width: 1284px) {
+  #header .ph-icon {
+    margin-right: 18px;
+    font-size: 23px;
+  }
+}
+
 #header .info-main {
   display: block;
   margin: 0;
@@ -216,6 +265,13 @@ button.btn:hover {
   line-height: 21px;
 }
 
+@media (max-width: 1284px) {
+  #header .info-main {
+    line-height: 17px;
+    font-size: 16px;
+  }
+}
+
 #header .info-secondary {
   display: block;
   margin: 0;
@@ -223,6 +279,13 @@ button.btn:hover {
   font-size: 16px;
   font-weight: 400;
   line-height: 16px;
+}
+
+@media (max-width: 1284px) {
+  #header .info-secondary {
+    font-size: 14px;
+    line-height: 14px;
+  }
 }
 
 #header .contact-info sup {
@@ -240,10 +303,23 @@ button.btn:hover {
           box-sizing: border-box;
 }
 
+@media (max-width: 1284px) {
+  #banner .container {
+    background-size: 324px auto;
+    background-position: left bottom;
+  }
+}
+
 #banner .main-menu {
   width: 100%;
   margin-top: 31px;
   text-align: center;
+}
+
+@media (max-width: 1284px) {
+  #banner .main-menu {
+    margin-top: 25px;
+  }
 }
 
 #banner ul {
@@ -252,6 +328,12 @@ button.btn:hover {
   margin: 0 0 0 394px;
   padding: 0;
   text-align: center;
+}
+
+@media (max-width: 1284px) {
+  #banner ul {
+    margin-left: 307px;
+  }
 }
 
 #banner li {
@@ -277,6 +359,14 @@ button.btn:hover {
   color: #12171a;
 }
 
+@media (max-width: 1284px) {
+  #banner li a {
+    width: 100px;
+    font-size: 15px;
+    line-height: 26px;
+  }
+}
+
 #banner li a:hover {
   border: 3px solid #ce0c14;
 }
@@ -286,15 +376,34 @@ button.btn:hover {
   padding-top: 3px;
 }
 
+@media (max-width: 1284px) {
+  #banner li a.ttu {
+    line-height: 23px;
+  }
+}
+
 #banner .content-wrapper {
   font-family: 'Phanton', sans-serif;
   padding-top: 33px;
   margin-bottom: 94px;
 }
 
+@media (max-width: 1284px) {
+  #banner .content-wrapper {
+    padding-top: 26px;
+    margin-bottom: 85px;
+  }
+}
+
 #banner .text-block {
   float: left;
   max-width: 370px;
+}
+
+@media (max-width: 1284px) {
+  #banner .text-block {
+    max-width: 288px;
+  }
 }
 
 #banner .text-block h1 {
@@ -303,20 +412,48 @@ button.btn:hover {
   font-weight: 700;
 }
 
+@media (max-width: 1284px) {
+  #banner .text-block h1 {
+    font-size: 26px;
+    margin-top: 14px;
+  }
+}
+
 #banner .text-block .stars {
   padding-left: 93px;
   margin-top: 10px;
   margin-bottom: 10px;
 }
 
+@media (max-width: 1284px) {
+  #banner .text-block .stars {
+    padding-left: 73px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+  }
+}
+
 #banner .text-block .stars img {
   margin-right: 15px;
+}
+
+@media (max-width: 1284px) {
+  #banner .text-block .stars img {
+    margin-right: 9px;
+  }
 }
 
 #banner .text-block p {
   margin: 0;
   max-width: 340px;
   font-size: 22px;
+}
+
+@media (max-width: 1284px) {
+  #banner .text-block p {
+    max-width: 260px;
+    font-size: 18px;
+  }
 }
 
 #banner .form {
@@ -328,11 +465,26 @@ button.btn:hover {
   text-align: center;
 }
 
+@media (max-width: 1284px) {
+  #banner .form {
+    margin-left: 39px;
+    width: 274px;
+    padding: 18px 15px 41px;
+  }
+}
+
 #banner .form p {
   margin: 0 0 9px;
   font-size: 21px;
   font-weight: bold;
   text-align: center;
+}
+
+@media (max-width: 1284px) {
+  #banner .form p {
+    font-size: 18px;
+    margin-bottom: 7px;
+  }
 }
 
 #banner .form input {
@@ -345,9 +497,25 @@ button.btn:hover {
   margin-bottom: 17px;
 }
 
+@media (max-width: 1284px) {
+  #banner .form input {
+    line-height: 38px;
+    margin-bottom: 13px;
+    font-size: 14px;
+    padding-top: 3px;
+  }
+}
+
 #banner .form button {
   width: 223px;
   height: 55px;
+}
+
+@media (max-width: 1284px) {
+  #banner .form button {
+    width: 173px;
+    height: 38px;
+  }
 }
 
 /* AFTER BANNER DIVIDER */
@@ -369,6 +537,13 @@ button.btn:hover {
   }
 }
 
+@media (max-width: 1284px) {
+  .banner-divider {
+    height: 140px;
+    margin-top: -140px;
+  }
+}
+
 /*PROBLEMS SECTION*/
 
 #problems {
@@ -384,10 +559,21 @@ button.btn:hover {
   margin-top: 28px;
 }
 
+@media (max-width: 1284px) {
+  #problems .content {
+    margin-top: 20px;
+  }
+}
+
 #problems .left,
 #problems .right,
 #problems .main {
   float: left;
+}
+
+#problems .main {
+  width: 504px;
+  height: auto;
 }
 
 #problems .left {
@@ -396,14 +582,36 @@ button.btn:hover {
   margin-right: 4px;
 }
 
+@media (max-width: 1284px) {
+  #problems .left {
+    width: 214px;
+    margin-top: 85px;
+  }
+}
+
 #problems .right {
   width: 250px;
   margin-top: 125px;
   margin-left: 50px;
 }
 
+@media (max-width: 1284px) {
+  #problems .right {
+    width: 195px;
+    margin-left: 39px;
+    margin-top: 100px;
+  }
+}
+
 #problems .item {
   position: relative;
+}
+
+@media (max-width: 1284px) {
+  #problems .item .icon {
+    height: 22px;
+    width: auto;
+  }
 }
 
 #problems .item p {
@@ -413,20 +621,53 @@ button.btn:hover {
   line-height: 29px;
 }
 
+@media (max-width: 1284px) {
+  #problems .item p {
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 40px;
+  }
+}
+
 #problems .arrow {
   position: absolute;
+}
+
+@media (max-width: 1284px) {
+  #problems .arrow {
+    width: 100%;
+  }
 }
 
 #problems .arrow1 {
   bottom: -36px;
 }
 
+@media (max-width: 1284px) {
+  #problems .arrow1 {
+    bottom: -30px;
+  }
+}
+
 #problems .arrow2 {
   bottom: -15px;
 }
 
+@media (max-width: 1284px) {
+  #problems .arrow2 {
+    bottom: -12px;
+  }
+}
+
 #problems .arrow3 {
   bottom: -10px;
+}
+
+@media (max-width: 1284px) {
+  #problems .arrow3 {
+    bottom: -8px;
+    width: 260px;
+  }
 }
 
 #problems .arrow4 {
@@ -434,9 +675,25 @@ button.btn:hover {
   left: -50px;
 }
 
+@media (max-width: 1284px) {
+  #problems .arrow4 {
+    bottom: -23px;
+    left: -39px;
+    width: 210px;
+  }
+}
+
 #problems .arrow5 {
   bottom: -10px;
   left: -60px;
+}
+
+@media (max-width: 1284px) {
+  #problems .arrow5 {
+    bottom: -8px;
+    left: -60px;
+    width: 230px;
+  }
 }
 
 #problems .bottom {
@@ -500,6 +757,13 @@ button.btn:hover {
   border: 2px solid #0a435e;
 }
 
+@media (max-width: 1284px) {
+  #solutions .item {
+    width: 288px;
+    margin: 0 3px;
+  }
+}
+
 #solutions .inner-wrapper {
   padding: 39px 10px 0;
 }
@@ -527,6 +791,16 @@ button.btn:hover {
   font-weight: 700;
 }
 
+@media (max-width: 1284px) {
+  #solutions .number {
+    width: 48px;
+    height: 48px;
+    font-size: 55px;
+    line-height: 55px;
+    padding-left: 16px;
+  }
+}
+
 #solutions h3 {
   margin: 10px 0 0 10px;
   font-size: 29px;
@@ -535,6 +809,15 @@ button.btn:hover {
   line-height: 28px;
   font-weight: 700;
   text-transform: uppercase;
+}
+
+@media (max-width: 1284px) {
+  #solutions h3 {
+    width: 205px;
+    margin: 4px 0 0 8px;
+    font-size: 23px;
+    line-height: 23px;
+  }
 }
 
 #solutions h3 span {
@@ -560,6 +843,14 @@ button.btn:hover {
   line-height: 24px;
 }
 
+@media (max-width: 1284px) {
+  #solutions .item-desc {
+    font-size: 15px;
+    line-height: 21px;
+    min-height: 84px;
+  }
+}
+
 #solutions .list-title {
   margin-top: 18px;
   margin-bottom: 10px;
@@ -582,6 +873,14 @@ button.btn:hover {
   margin-bottom: 7px;
 }
 
+@media (max-width: 1284px) {
+  #solutions li {
+    font-size: 15px;
+    line-height: 15px;
+    margin-bottom: 6px;
+  }
+}
+
 #solutions li:last-child {
   min-height: 51px;
 }
@@ -598,6 +897,12 @@ button.btn:hover {
   position: relative;
 }
 
+@media (max-width: 1284px) {
+  #solutions li p {
+    width: 239px;
+  }
+}
+
 #solutions .bottom {
   margin-top: 41px;
 }
@@ -607,12 +912,28 @@ button.btn:hover {
   float: left;
 }
 
+@media (max-width: 1284px) {
+  #solutions .bottom img {
+    width: 51px;
+    height: auto;
+  }
+}
+
 #solutions .bottom p {
   width: 994px;
   margin: 13px 8px 0;
   padding: 7px 55px 11px;
   background: #f6d258;
   font-size: 20px;
+}
+
+@media (max-width: 1284px) {
+  #solutions .bottom p {
+    width: 760px;
+    font-size: 16px;
+    margin-top: 9px;
+    padding: 5px 35px 7px;
+  }
 }
 
 #solutions .bottom p span {
@@ -627,8 +948,20 @@ button.btn:hover {
   background-color: rgba(204, 204, 204, 0.35);
 }
 
+@media (max-width: 1284px) {
+  #interessmore {
+    padding: 75px 0 40px;
+  }
+}
+
 #interessmore .content {
   margin-top: 82px;
+}
+
+@media (max-width: 1284px) {
+  #interessmore .content {
+    margin-top: 55px;
+  }
 }
 
 #interessmore .item {
@@ -636,6 +969,19 @@ button.btn:hover {
   width: 20%;
   padding: 0 12px;
   text-align: center;
+}
+
+@media (max-width: 1284px) {
+  #interessmore .item {
+    padding-top: 19px;
+  }
+}
+
+@media (max-width: 1284px) {
+  #interessmore .item img {
+    height: 93px;
+    width: auto;
+  }
 }
 
 #interessmore .item2,
@@ -667,6 +1013,13 @@ button.btn:hover {
   line-height: 26px;
 }
 
+@media (max-width: 1284px) {
+  #interessmore h3 {
+    font-size: 19px;
+    line-height: 21px;
+  }
+}
+
 #interessmore .divider {
   width: 48px;
   height: 2px;
@@ -681,10 +1034,23 @@ button.btn:hover {
   line-height: 24px;
 }
 
+@media (max-width: 1284px) {
+  #interessmore p {
+    font-size: 14px;
+    line-height: 20px;
+  }
+}
+
 /* CLIENTS */
 
 #clients {
   padding-top: 56px;
+}
+
+@media (max-width: 1284px) {
+  #clients {
+    padding-top: 40px;
+  }
 }
 
 #clients .content {
@@ -696,9 +1062,22 @@ button.btn:hover {
   background: url("../img/clientsbg.png") 50% 50% no-repeat;
 }
 
+@media (max-width: 1284px) {
+  #clients .content {
+    padding-top: 250px;
+  }
+}
+
 #clients .item {
   position: absolute;
   text-align: center;
+}
+
+@media (max-width: 1284px) {
+  #clients .item img {
+    width: 130px;
+    height: auto;
+  }
 }
 
 #clients .item1 {
@@ -706,9 +1085,23 @@ button.btn:hover {
   left: 508px;
 }
 
+@media (max-width: 1284px) {
+  #clients .item1 {
+    top: -55px;
+    left: 408px;
+  }
+}
+
 #clients .item2 {
   top: 95px;
   left: 206px;
+}
+
+@media (max-width: 1284px) {
+  #clients .item2 {
+    top: 130px;
+    left: 96px;
+  }
 }
 
 #clients .item3 {
@@ -716,14 +1109,35 @@ button.btn:hover {
   left: 867px;
 }
 
+@media (max-width: 1284px) {
+  #clients .item3 {
+    top: 130px;
+    left: 697px;
+  }
+}
+
 #clients .item4 {
   top: 446px;
   left: 293px;
 }
 
+@media (max-width: 1284px) {
+  #clients .item4 {
+    top: 446px;
+    left: 143px;
+  }
+}
+
 #clients .item5 {
   top: 446px;
   left: 775px;
+}
+
+@media (max-width: 1284px) {
+  #clients .item5 {
+    top: 446px;
+    left: 675px;
+  }
 }
 
 #clients h3 {
@@ -732,6 +1146,12 @@ button.btn:hover {
   font-weight: 600;
   font-size: 18px;
   line-height: 18px;
+}
+
+@media (max-width: 1284px) {
+  #clients h3 {
+    margin-bottom: 12px;
+  }
 }
 
 #clients .more {
@@ -752,6 +1172,14 @@ button.btn:hover {
   transition: 0.3s all;
 }
 
+@media (max-width: 1284px) {
+  #clients .more {
+    width: 110px;
+    height: 35px;
+    line-height: 35px;
+  }
+}
+
 #clients .more:hover {
   background-color: #740b0f;
 }
@@ -761,6 +1189,12 @@ button.btn:hover {
   max-width: 417px;
 }
 
+@media (max-width: 1284px) {
+  #clients .list {
+    max-width: 380px;
+  }
+}
+
 #clients .list-title {
   padding: 6px 6px 2px;
   text-align: center;
@@ -768,6 +1202,13 @@ button.btn:hover {
   line-height: 19px;
   font-weight: 700;
   background-color: #f6d258;
+}
+
+@media (max-width: 1284px) {
+  #clients .list-title {
+    font-size: 17px;
+    line-height: 17px;
+  }
 }
 
 #clients ul {
@@ -807,6 +1248,12 @@ button.btn:hover {
   padding: 0 46px;
 }
 
+@media (max-width: 1284px) {
+  #technics .content-top {
+    padding: 0 30px;
+  }
+}
+
 #technics .content-top p {
   margin: 0;
 }
@@ -828,8 +1275,22 @@ button.btn:hover {
   font-size: 22px;
 }
 
+@media (max-width: 1284px) {
+  #technics .left {
+    max-width: 355px;
+    font-size: 18px;
+    padding-right: 15px;
+  }
+}
+
 #technics .mid {
   margin: 0 33px 0 43px;
+}
+
+@media (max-width: 1284px) {
+  #technics .mid {
+    margin: 0 26px 0 33px;
+  }
 }
 
 #technics .dots {
@@ -841,6 +1302,14 @@ button.btn:hover {
   display: inline-block;
   margin-top: 24px;
   position: relative;
+}
+
+@media (max-width: 1284px) {
+  #technics .dots img {
+    width: 16px;
+    height: auto;
+    margin-top: 24px;
+  }
 }
 
 #technics .dots img:nth-child(1),
@@ -863,6 +1332,13 @@ button.btn:hover {
   font-size: 17px;
 }
 
+@media (max-width: 1284px) {
+  #technics .right {
+    max-width: 355px;
+    font-size: 15px;
+  }
+}
+
 #technics .right span {
   background-color: #9cbec6;
 }
@@ -877,6 +1353,14 @@ button.btn:hover {
   line-height: 28px;
   text-align: center;
   border: 3px solid #f00;
+}
+
+@media (max-width: 1284px) {
+  #technics .content-mid {
+    font-size: 20px;
+    line-height: 26px;
+    padding: 18px 70px 14px;
+  }
 }
 
 #technics .content-mid p {
@@ -894,10 +1378,24 @@ button.btn:hover {
   text-align: center;
 }
 
+@media (max-width: 1284px) {
+  #technics .content-bottom .item img {
+    width: 128px;
+    height: auto;
+  }
+}
+
 #technics .content-bottom .item p {
   text-align: left;
   font-size: 19px;
   margin: 24px auto 0;
+}
+
+@media (max-width: 1284px) {
+  #technics .content-bottom .item p {
+    font-size: 15px;
+    margin-top: 18px;
+  }
 }
 
 #technics .content-bottom .item:nth-child(2) {
@@ -929,9 +1427,20 @@ button.btn:hover {
   padding-left: 54px;
 }
 
+@media (max-width: 1284px) {
+  #crisis .content {
+    padding: 0 30px;
+  }
+}
+
 #crisis img,
 #crisis .text {
   float: left;
+}
+
+#crisis img {
+  height: auto;
+  width: 435px;
 }
 
 #crisis .text {
@@ -939,11 +1448,26 @@ button.btn:hover {
   margin-left: 42px;
 }
 
+@media (max-width: 1284px) {
+  #crisis .text {
+    max-width: 413px;
+    margin-left: 30px;
+  }
+}
+
 #crisis .text .main {
   margin-top: 56px;
   margin-bottom: 12px;
   font-size: 15px;
   line-height: 20px;
+}
+
+@media (max-width: 1284px) {
+  #crisis .text .main {
+    margin-top: 15px;
+    font-size: 14px;
+    line-height: 18px;
+  }
 }
 
 #crisis .text .bottom {
@@ -954,6 +1478,13 @@ button.btn:hover {
   font-size: 20px;
   font-weight: 600;
   line-height: 28px;
+}
+
+@media (max-width: 1284px) {
+  #crisis .text .bottom {
+    font-size: 18px;
+    line-height: 25px;
+  }
 }
 
 /* UTP */
@@ -986,6 +1517,20 @@ button.btn:hover {
   margin-right: 35px;
 }
 
+@media (max-width: 1284px) {
+  #utp .text {
+    max-width: 568px;
+    margin-right: 25px;
+  }
+}
+
+@media (max-width: 1284px) {
+  #utp img {
+    width: 341px;
+    height: auto;
+  }
+}
+
 #utp .title {
   color: #5688a3;
   margin-top: 40px;
@@ -1000,6 +1545,14 @@ button.btn:hover {
   line-height: 140px;
 }
 
+@media (max-width: 1284px) {
+  #utp h3 {
+    font-size: 120px;
+    line-height: 100px;
+    margin-right: 35px;
+  }
+}
+
 #utp .text-desc {
   max-width: 350px;
   margin-top: 20px;
@@ -1007,6 +1560,15 @@ button.btn:hover {
   font-size: 20px;
   font-weight: 600;
   line-height: 29px;
+}
+
+@media (max-width: 1284px) {
+  #utp .text-desc {
+    max-width: 273px;
+    margin-top: 5px;
+    font-size: 16px;
+    line-height: 25px;
+  }
 }
 
 #utp .divider {
@@ -1022,6 +1584,13 @@ button.btn:hover {
   line-height: 35px;
 }
 
+@media (max-width: 1284px) {
+  #utp p.main {
+    font-size: 16px;
+    line-height: 25px;
+  }
+}
+
 #utp p.bottom {
   margin-top: 49px;
   margin-bottom: 0;
@@ -1030,6 +1599,13 @@ button.btn:hover {
   line-height: 30px;
   text-align: center;
   text-transform: uppercase;
+}
+
+@media (max-width: 1284px) {
+  #utp p.bottom {
+    font-size: 24px;
+    line-height: 24px;
+  }
 }
 
 /* AUDIT */
