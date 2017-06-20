@@ -79,7 +79,7 @@
 @media (max-width: 1284px){
 	
 }
-@media (max-width: 991px){
+@media (max-width: 1006px){
 	
 }
 @media (max-width: 767px){
@@ -116,6 +116,10 @@ h2{
   @media (max-width: 1284px){
     width: 992px;
     padding: 0 15px;
+  }
+  @media (max-width: 1006px){
+    width: 750px; /*0.755*/
+    padding: 0 10px;
   }
 }
 .container,
@@ -1360,16 +1364,30 @@ button.btn{
     padding: 62px 0 120px;
     background: url('../img/audit.png') no-repeat;
     background-position: 100px 50px;
+
+    @media (max-width: 1284px){
+     background-size: 330px auto;
+     background-position: 100px 60px;
+     padding: 42px 0 100px;
+    }
   }
   .content{
     float: right;
     width: 800px;
     padding-right: 30px;
+
+    @media (max-width: 1284px){
+      width: 624px;
+    }
   }
   h2{
     color: #fff;
     max-width: 725px;
     line-height: 30px;
+
+    @media (max-width: 1284px){
+     font-size: 24px;
+    }
   }
   .desc{
     margin: 0;
@@ -1380,6 +1398,11 @@ button.btn{
     text-transform: uppercase;
     font-weight: 700;
     text-align: center;
+
+    @media (max-width: 1284px){
+     font-size: 18px;
+     line-height: 26px;
+    }
   }
   .main{
     margin-top: 17px;
@@ -1388,10 +1411,20 @@ button.btn{
     line-height: 30px;
     padding-right: 20px;
     text-align: justify;
+
+    @media (max-width: 1284px){
+     font-size: 16px;
+     line-height: 25px;
+     margin-bottom: 44px;
+    }
   }
   button{
     .size(346px, 55px);
     margin-left: 31px;
+
+    @media (max-width: 1284px){
+     .size(276px, 45px);
+    }
   }
 }
 .audit-divider{
@@ -1403,13 +1436,11 @@ button.btn{
   background-position: 50% 50%;
   margin-top: -170px;
 
-  /*@media (max-width: 1600px){
-    height: 150px;
-    margin-top: -150px;
-  }
   @media (max-width: 1284px){
-  
-  }*/
+    height: 140px;
+    margin-top: -140px;   
+  }
+
 }
 
 /*MARKETING*/
@@ -1427,20 +1458,40 @@ button.btn{
     max-width: 440px;
     margin-right: 75px;
 
+    @media (max-width: 1284px){
+     max-width: 343px;
+     margin-right: 55px;
+    }
+
     h2{
       text-align: left;
       margin-top: 165px;
       line-height: 43px;
+
+      @media (max-width: 1284px){
+        font-size: 24px;
+        line-height: 35px;
+        margin-top: 128px;
+      }
     }
     .desc{
       margin: 25px 0;
       font-size: 19px;
       line-height: 28px;
-
+      
+      @media (max-width: 1284px){
+        font-size: 16px;
+        line-height: 22px;
+        margin: 18px 0;
+      }
     }
   }
   .right{
     max-width: 645px;
+
+    @media (max-width: 1284px){
+     max-width: 503px;
+    }
     
     .item{
       margin-bottom: 40px;
@@ -1453,9 +1504,26 @@ button.btn{
       text-align: center;
       width: 143px;
       margin-right: 30px;
+
+      @media (max-width: 1284px){
+        width: 112px;
+        margin-right: 20px;
+      }
+
+      img{
+        @media (max-width: 1284px){
+          height: 120px;
+          width: auto;
+        }
+        
+      }
     }
     .text{
       max-width: 470px;
+
+      @media (max-width: 1284px){
+        max-width: 366px;
+      }
 
       h3{
         max-width: 453px;
@@ -1464,12 +1532,22 @@ button.btn{
         font-weight: 700;
         line-height: 24px;
         text-transform: uppercase;
+
+        @media (max-width: 1284px){
+          font-size: 16px;
+          line-height: 21px;
+        }
       }
       p{
         margin: 0;
         font-size: 17px;
         font-style: italic;
         line-height: 25px;
+
+        @media (max-width: 1284px){
+          font-size: 14px;
+          line-height: 20px;
+        }
       }
     }
   }
@@ -1479,6 +1557,10 @@ button.btn{
 #results{
   padding: 90px 0 56px;
   text-align: center;
+
+  @media (max-width: 1284px){
+    padding: 70px 0 46px;
+  }
 
   h2{
     font-size: 27px;
@@ -1494,6 +1576,11 @@ button.btn{
     font-size: 19px;
     line-height: 32px;
     text-align: left;
+
+    @media (max-width: 1284px){
+      font-size: 16px;
+      line-height: 26px;
+    }
   }
   .left{
     position: relative;
@@ -1501,9 +1588,19 @@ button.btn{
     margin-right: 11px;
     padding: 11px 4px 30px;
     border-bottom: 2px solid @fontColor;
+
+    @media (max-width: 1284px){
+      width: 370px;
+    }
     
     .main-img{
       margin-bottom: 18px;
+      
+      @media (max-width: 1284px){
+        width: 150px;
+        height: auto;
+        margin-bottom: 10px;
+      }
     }
     .dot{
       position: absolute;
@@ -1511,6 +1608,10 @@ button.btn{
       background-color: #fff;
       left: 212px;
       bottom: -22px;
+        
+      @media (max-width: 1284px){
+        left: 164px;
+      }
     }
   }
   .right{
@@ -1519,10 +1620,19 @@ button.btn{
     background-color: @secColor;
     border-left: 5px solid @fontColor;
 
+    @media (max-width: 1284px){
+      width: 525px;
+      padding: 40px 25px;
+    }
+
     .quote{
       margin-top: 48px;
       font-size: 28px;
       font-style: italic;
+
+      @media (max-width: 1284px){
+        font-size: 22px;
+      }
     }
   }
   .bottom{
@@ -1531,6 +1641,10 @@ button.btn{
     font-family: 'Phanton', sans-serif;
     font-weight: 700;
     font-size: 29px;
+
+    @media (max-width: 1284px){
+      font-size: 22px;
+    }
 
     span{
       text-transform: uppercase;
@@ -1549,11 +1663,25 @@ button.btn{
   background-color: #b5e5f5;
   text-align: center;
 
+  @media (max-width: 1284px){
+    padding-top: 40px;
+  }
+  
+  h2{
+    @media (max-width: 1284px){
+      font-size: 25px;
+    }
+  }
   .content{
     width: 1139px;
     margin: 47px auto 0;
     background: url('../img/howworkbg.png') 50% 35px no-repeat;
     background-size: 100% auto;
+
+    @media (max-width: 1284px){
+      width: 888px;
+      background-size: 100% 204px;
+    }
   }
   .desc{
     margin: 7px 0 0;    
@@ -1563,11 +1691,21 @@ button.btn{
     font-size: 33px;
     font-weight: 600;
     line-height: 33px;
+
+    @media (max-width: 1284px){
+      font-size: 27px;
+      line-height: 27px;
+      margin: 45px 0 6px;
+    }
   }
   .divider{
     .size(270px, 3px);
     margin: 0 auto;
     background-color: #0290d5;
+
+    @media (max-width: 1284px){
+      width: 240px;
+    }
   }
   .item{
     text-align: center;
@@ -1602,16 +1740,29 @@ button.btn{
   .item4{
     width: 162px;
     margin-left: 77px;
+
+    @media (max-width: 1284px){
+      margin-left: 17px;
+      margin-bottom: 11px;
+    }
   }
   .item5{
     width: 198px;
     margin-left: 311px;
     margin-bottom: 11px;
+
+    @media (max-width: 1284px){
+      margin-left: 30px;
+    }
   }
   .item6{
     width: 232px;
     margin-left: 94px;
     margin-bottom: 11px;
+
+    @media (max-width: 1284px){
+      margin-left: 30px;
+    }
 
     p{
       margin-top: 6px;
@@ -1650,16 +1801,30 @@ button.btn{
     padding: 48px 348px 30px 58px;
     background-color: #ecd765;
     text-align: left;
+    
+    @media (max-width: 1284px){
+      max-width: 900px;
+      padding-right: 400px;
+    }
 
     img{
       bottom: -29px;
-      right: -222px;
+      right: -62px;
+
+      @media (max-width: 1284px){
+        width: 450px;
+      }
     }
   }
   p{
     font-size: 17px;
     line-height: 24px;
     margin: 0 0 6px;
+
+    @media (max-width: 1284px){
+      font-size: 15px;
+      line-height: 20px;
+    }
 
     span{
       font-weight: 600;
@@ -1695,6 +1860,10 @@ button.btn{
   background-color: #005e7f;
   color: #fff;
 
+  @media (max-width: 1284px){
+    padding: 60px 0;   
+  }
+
   a{
     color: #fff;
   }
@@ -1704,6 +1873,11 @@ button.btn{
     font-weight: 700;
     line-height: 23px;
     text-transform: uppercase;
+
+    @media (max-width: 1284px){
+      font-size: 20px;
+      line-height: 20px; 
+    }
   }
   .col{
     float: left;
@@ -1712,10 +1886,18 @@ button.btn{
   }
   .col2{
     padding: 0px 0 9px 58px;
+
+    @media (max-width: 1284px){
+      padding-left: 25px;
+    }
   }
   .col3{
     padding-left: 50px;
     margin-right: 0;
+
+    @media (max-width: 1284px){
+      padding-left: 25px; 
+    }
   }
   /*Content TOP*/ 
   .content-top{
@@ -1724,6 +1906,12 @@ button.btn{
     .col1{
       a{
         float: left;
+
+      }
+      img{
+        @media (max-width: 1284px){
+          width: 100%;
+        }
       }
       p{
         float: left;
@@ -1770,10 +1958,20 @@ button.btn{
         margin-right: 20px;
         width: 36px;
         text-align: center;
+
+        @media (max-width: 1284px){
+          margin-right: 5px;
+          width: 26px;
+        }
       }
       .ph-icon{
         font-size: 30px;
         width: 36px;
+
+        @media (max-width: 1284px){
+          width: 26px;
+          font-size: 22px;
+        }
       }
       .foot-contact-item{
         width: 100%;
@@ -1792,9 +1990,18 @@ button.btn{
         font-size: 19px;
         font-weight: 700;
 
+        @media (max-width: 1284px){
+          font-size: 16px;
+          line-height: 22px;
+        }
+
         span{
           font-size: 16px;
           font-weight: 400;
+          
+          @media (max-width: 1284px){
+            font-size: 14px;
+          }
         }
       }
     }
@@ -1807,6 +2014,10 @@ button.btn{
   /*Content BOTTOM*/
   .content-bottom{
     padding-top: 64px;
+
+    @media (max-width: 1284px){
+     padding-top: 45px;
+    }
 
     ul{
       padding-left: 20px;
@@ -1822,12 +2033,20 @@ button.btn{
           border-bottom: 1px solid #fff;
           font-size: 17px;
           font-weight: 700;
+
+          @media (max-width: 1284px){
+            font-size: 15px;
+          }
         }
       }
     }
     .col1{
       padding-left: 7px;
       padding-top: 32px;
+
+      @media (max-width: 1284px){
+        padding-top: 40px;
+      }
       
       a{
         margin-right: 16px;
@@ -1836,6 +2055,11 @@ button.btn{
         margin-top: 36px;
         font-size: 17px;
         font-style: italic;
+
+        @media (max-width: 1284px){
+          margin-top: 26px;
+          font-size: 13px;
+        }
       }
     }
     .col2{
