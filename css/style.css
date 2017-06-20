@@ -121,7 +121,6 @@ h2 {
     width: 750px;
     /*0.755*/
     padding: 0 10px;
-    border: 1px solid black;
   }
 }
 
@@ -2332,6 +2331,12 @@ button.btn:hover {
   padding: 0 30px;
 }
 
+@media (max-width: 1006px) {
+  #marketing .content {
+    padding: 0;
+  }
+}
+
 #marketing .left,
 #marketing .right,
 #marketing .img,
@@ -2351,6 +2356,15 @@ button.btn:hover {
   }
 }
 
+@media (max-width: 1006px) {
+  #marketing .left {
+    max-width: 100%;
+    margin-right: 0;
+    margin-bottom: 30px;
+    text-align: center;
+  }
+}
+
 #marketing .left h2 {
   text-align: left;
   margin-top: 165px;
@@ -2362,6 +2376,15 @@ button.btn:hover {
     font-size: 24px;
     line-height: 35px;
     margin-top: 128px;
+  }
+}
+
+@media (max-width: 1006px) {
+  #marketing .left h2 {
+    margin-top: 0;
+    text-align: center;
+    font-size: 22px;
+    line-height: 30px;
   }
 }
 
@@ -2379,6 +2402,12 @@ button.btn:hover {
   }
 }
 
+@media (max-width: 1006px) {
+  #marketing .left .desc {
+    margin: 5px 0;
+  }
+}
+
 #marketing .right {
   max-width: 645px;
 }
@@ -2386,6 +2415,12 @@ button.btn:hover {
 @media (max-width: 1284px) {
   #marketing .right {
     max-width: 503px;
+  }
+}
+
+@media (max-width: 1006px) {
+  #marketing .right {
+    max-width: 100%;
   }
 }
 
@@ -2424,6 +2459,12 @@ button.btn:hover {
 @media (max-width: 1284px) {
   #marketing .right .text {
     max-width: 366px;
+  }
+}
+
+@media (max-width: 1006px) {
+  #marketing .right .text {
+    max-width: 550px;
   }
 }
 
@@ -2470,12 +2511,24 @@ button.btn:hover {
   }
 }
 
+@media (max-width: 1006px) {
+  #results {
+    padding: 40px 0;
+  }
+}
+
 #results h2 {
   font-size: 27px;
 }
 
 #results .content {
   margin-top: 33px;
+}
+
+@media (max-width: 1006px) {
+  #results .content {
+    margin-top: 20px;
+  }
 }
 
 #results .left,
@@ -2511,6 +2564,13 @@ button.btn:hover {
   }
 }
 
+@media (max-width: 1006px) {
+  #results .left {
+    width: 100%;
+    margin-right: 0;
+  }
+}
+
 #results .left .main-img {
   margin-bottom: 18px;
 }
@@ -2521,6 +2581,20 @@ button.btn:hover {
     height: auto;
     margin-bottom: 10px;
   }
+}
+
+@media (max-width: 1006px) {
+  #results .left .main-img {
+    float: left;
+    margin-bottom: 0;
+    margin-right: 20px;
+  }
+}
+
+#results .left p {
+  float: left;
+  width: 500px;
+  padding-top: 20px;
 }
 
 #results .left .dot {
@@ -2534,6 +2608,12 @@ button.btn:hover {
 @media (max-width: 1284px) {
   #results .left .dot {
     left: 164px;
+  }
+}
+
+@media (max-width: 1006px) {
+  #results .left .dot {
+    left: 340px;
   }
 }
 
@@ -2551,6 +2631,14 @@ button.btn:hover {
   }
 }
 
+@media (max-width: 1006px) {
+  #results .right {
+    width: 100%;
+    margin-top: 30px;
+    padding: 30px 25px;
+  }
+}
+
 #results .right .quote {
   margin-top: 48px;
   font-size: 28px;
@@ -2560,6 +2648,12 @@ button.btn:hover {
 @media (max-width: 1284px) {
   #results .right .quote {
     font-size: 22px;
+  }
+}
+
+@media (max-width: 1006px) {
+  #results .right .quote {
+    margin-top: 30px;
   }
 }
 
@@ -2577,14 +2671,36 @@ button.btn:hover {
   }
 }
 
+@media (max-width: 1006px) {
+  #results .bottom {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+}
+
 #results .bottom span {
   text-transform: uppercase;
   color: #005e7f;
 }
 
+@media (max-width: 1006px) {
+  #results .bottom span {
+    display: block;
+    width: 100%;
+    margin-top: 10px;
+  }
+}
+
 #results button {
   width: 346px;
   height: 55px;
+}
+
+@media (max-width: 1006px) {
+  #results button {
+    width: 300px;
+    height: 40px;
+  }
 }
 
 /*HOWWORK*/
@@ -2621,6 +2737,13 @@ button.btn:hover {
   }
 }
 
+@media (max-width: 1006px) {
+  #howwork .content {
+    width: 100%;
+    background: none;
+  }
+}
+
 #howwork .desc {
   margin: 7px 0 0;
 }
@@ -2637,6 +2760,12 @@ button.btn:hover {
     font-size: 27px;
     line-height: 27px;
     margin: 45px 0 6px;
+  }
+}
+
+@media (max-width: 1006px) {
+  #howwork h3 {
+    margin-top: 30px;
   }
 }
 
@@ -2668,14 +2797,36 @@ button.btn:hover {
   text-align: left;
 }
 
+@media (max-width: 1006px) {
+  #howwork .item p {
+    text-align: center;
+    padding: 0 10px;
+  }
+}
+
 #howwork .item1 {
   text-align: left;
   margin-left: 44px;
   width: 223px;
 }
 
+@media (max-width: 1006px) {
+  #howwork .item1 {
+    text-align: center;
+    margin: 0;
+    margin-bottom: 20px;
+    width: 33%;
+  }
+}
+
 #howwork .item1 img {
   margin-left: 44px;
+}
+
+@media (max-width: 1006px) {
+  #howwork .item1 img {
+    margin: 0;
+  }
 }
 
 #howwork .item2 {
@@ -2683,9 +2834,25 @@ button.btn:hover {
   margin-left: 40px;
 }
 
+@media (max-width: 1006px) {
+  #howwork .item2 {
+    margin: 0;
+    margin-bottom: 20px;
+    width: 33%;
+  }
+}
+
 #howwork .item3 {
   width: 290px;
   margin-left: 28px;
+}
+
+@media (max-width: 1006px) {
+  #howwork .item3 {
+    margin: 0;
+    margin-bottom: 20px;
+    width: 33%;
+  }
 }
 
 #howwork .item4 {
@@ -2697,6 +2864,13 @@ button.btn:hover {
   #howwork .item4 {
     margin-left: 17px;
     margin-bottom: 11px;
+  }
+}
+
+@media (max-width: 1006px) {
+  #howwork .item4 {
+    margin: 0;
+    width: 33%;
   }
 }
 
@@ -2712,6 +2886,13 @@ button.btn:hover {
   }
 }
 
+@media (max-width: 1006px) {
+  #howwork .item5 {
+    margin: 0;
+    width: 33%;
+  }
+}
+
 #howwork .item6 {
   width: 232px;
   margin-left: 94px;
@@ -2721,6 +2902,13 @@ button.btn:hover {
 @media (max-width: 1284px) {
   #howwork .item6 {
     margin-left: 30px;
+  }
+}
+
+@media (max-width: 1006px) {
+  #howwork .item6 {
+    margin: 0;
+    width: 33%;
   }
 }
 
@@ -2735,6 +2923,13 @@ button.btn:hover {
   color: #2c85b8;
 }
 
+@media (max-width: 1006px) {
+  #howwork .item6 p {
+    font-size: 16px;
+    line-height: 20px;
+  }
+}
+
 .howwork-divider {
   height: 140px;
   width: 100%;
@@ -2747,6 +2942,12 @@ button.btn:hover {
 #live {
   padding-bottom: 56px;
   text-align: center;
+}
+
+@media (max-width: 1006px) {
+  #live {
+    padding-bottom: 40px;
+  }
 }
 
 #live .content,
@@ -2774,6 +2975,15 @@ button.btn:hover {
   }
 }
 
+@media (max-width: 1006px) {
+  #live .content {
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-right: 0;
+  }
+}
+
 #live .content img {
   bottom: -29px;
   right: -62px;
@@ -2782,6 +2992,14 @@ button.btn:hover {
 @media (max-width: 1284px) {
   #live .content img {
     width: 450px;
+  }
+}
+
+@media (max-width: 1006px) {
+  #live .content img {
+    position: static;
+    display: block;
+    margin: 0 auto;
   }
 }
 
@@ -2809,6 +3027,13 @@ button.btn:hover {
   border: 2px solid #f00;
 }
 
+@media (max-width: 1006px) {
+  #live .bottom {
+    width: 600px;
+    margin-bottom: 20px;
+  }
+}
+
 #live .bottom p {
   margin: 0;
   font-size: 20px;
@@ -2817,14 +3042,35 @@ button.btn:hover {
   text-align: center;
 }
 
+@media (max-width: 1006px) {
+  #live .bottom p {
+    font-size: 16px;
+    line-height: 20px;
+  }
+}
+
 #live .bottom img {
-  bottom: -78px;
+  bottom: -58px;
   right: -60px;
+}
+
+@media (max-width: 1006px) {
+  #live .bottom img {
+    width: 170px;
+    height: auto;
+  }
 }
 
 #live button {
   width: 346px;
   height: 55px;
+}
+
+@media (max-width: 1006px) {
+  #live button {
+    width: 300px;
+    height: 45px;
+  }
 }
 
 /* FOOTER */
@@ -2840,6 +3086,12 @@ button.btn:hover {
 @media (max-width: 1284px) {
   #footer {
     padding: 60px 0;
+  }
+}
+
+@media (max-width: 1006px) {
+  #footer {
+    padding: 40px 0;
   }
 }
 
@@ -2862,10 +3114,22 @@ button.btn:hover {
   }
 }
 
+@media (max-width: 1006px) {
+  #footer h3 {
+    font-size: 18px;
+  }
+}
+
 #footer .col {
   float: left;
   width: 32%;
   margin-right: 1%;
+}
+
+@media (max-width: 1006px) {
+  #footer .col1 {
+    margin-right: 2%;
+  }
 }
 
 #footer .col2 {
@@ -2875,6 +3139,12 @@ button.btn:hover {
 @media (max-width: 1284px) {
   #footer .col2 {
     padding-left: 25px;
+  }
+}
+
+@media (max-width: 1006px) {
+  #footer .col2 {
+    padding-left: 15px;
   }
 }
 
@@ -2889,12 +3159,38 @@ button.btn:hover {
   }
 }
 
+#footer .col3 .icon-box {
+  padding-top: 10px;
+}
+
+#footer .col3 br {
+  display: none;
+}
+
+@media (max-width: 1006px) {
+  #footer .col3 br {
+    display: inline-block;
+  }
+}
+
 #footer .content-top {
   padding-bottom: 36px;
 }
 
+@media (max-width: 1006px) {
+  #footer .content-top {
+    padding-bottom: 20px;
+  }
+}
+
 #footer .content-top .col1 a {
   float: left;
+}
+
+@media (max-width: 1006px) {
+  #footer .content-top .col1 a {
+    margin-top: 20px;
+  }
 }
 
 @media (max-width: 1284px) {
@@ -3038,6 +3334,12 @@ button.btn:hover {
 @media (max-width: 1284px) {
   #footer .content-bottom {
     padding-top: 45px;
+  }
+}
+
+@media (max-width: 1006px) {
+  #footer .content-bottom {
+    padding-top: 30px;
   }
 }
 
