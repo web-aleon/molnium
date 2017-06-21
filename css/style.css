@@ -3286,7 +3286,7 @@ button.btn:hover {
   #results .left .main-img {
     width: 150px;
     height: auto;
-    margin-bottom: 10px;
+    margin-bottom: 0px;
   }
 }
 
@@ -3308,13 +3308,13 @@ button.btn:hover {
 
 #results .left p {
   float: left;
-  width: 500px;
+  max-width: 500px;
   padding-top: 20px;
 }
 
 @media (max-width: 767px) {
   #results .left p {
-    width: 100%;
+    max-width: 100%;
   }
 }
 
