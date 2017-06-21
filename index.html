@@ -7,9 +7,8 @@
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <title>Molnium</title>
 
-    <!-- Bootstrap -->
     <link rel="stylesheet" href="css/normalize.css">
-    <!-- <link href="css/bootstrap.min.css" rel="stylesheet"> -->
+    <link rel="stylesheet" href="css/fontawesome.css">
     <link rel="stylesheet" href="css/style.css">
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -54,13 +53,16 @@
       <div class="container">
     <!-- MENU -->
         <nav class="main-menu clearfix">
-          <ul>
+          <i id="mobilemenu" class="fa fa-bars"></i>
+          <div class="mobilemenushow" style="display: none;"></div>
+          <ul id="headermenu">
             <li><a href="/">главная</a></li>
             <li><a href="#">о компании</a></li>
             <li><a href="#">контакты</a></li>
             <li><a class="ttu" href="#">блог</a></li>
           </ul>
         </nav>
+
     <!-- CONTENT -->
         <div class="content-wrapper fl-right">
           <div class="text-block">
@@ -70,6 +72,7 @@
               <img src="img/banner-star.png" alt="star">
               <img src="img/banner-star.png" alt="star">
             </div>
+            <img src="img/banner-men.png" alt="Molnium" class="banner_img wbh_mobile">
             <p>Наши решения увеличивают прибыль на 30 - 370 % за 2 месяца и позволяют выйти из конкурентной войны победителем</p>
           </div>
           <div class="form">
@@ -546,7 +549,7 @@
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <!-- <script src="js/bootstrap.min.js"></script> -->
     <script src="js/scroll.js"></script>
+    <script src="js/script.js"></script>
   </body>
 </html>
