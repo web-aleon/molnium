@@ -468,10 +468,16 @@ button.btn:hover {
 }
 
 #banner .banner_img {
-  display: block;
-  width: 220px;
-  height: auto;
-  margin: 0 auto;
+  display: none;
+}
+
+@media (max-width: 767px) {
+  #banner .banner_img {
+    display: block;
+    width: 220px;
+    height: auto;
+    margin: 0 auto;
+  }
 }
 
 #banner .main-menu {
@@ -589,6 +595,8 @@ button.btn:hover {
 @media (max-width: 767px) {
   #banner li a {
     color: #fff;
+    font-size: 18px;
+    width: 129px;
   }
 }
 
@@ -1377,6 +1385,12 @@ button.btn:hover {
   }
 }
 
+@media (max-width: 767px) {
+  #solutions .item-desc {
+    width: 100%;
+  }
+}
+
 #solutions .list-title {
   margin-top: 18px;
   margin-bottom: 10px;
@@ -1404,6 +1418,12 @@ button.btn:hover {
     font-size: 15px;
     line-height: 15px;
     margin-bottom: 6px;
+  }
+}
+
+@media (max-width: 767px) {
+  #solutions li {
+    width: 100%;
   }
 }
 
@@ -1447,7 +1467,14 @@ button.btn:hover {
 
 #solutions .bottom img,
 #solutions .bottom p {
-  float: none;
+  float: left;
+}
+
+@media (max-width: 767px) {
+  #solutions .bottom img,
+  #solutions .bottom p {
+    float: none;
+  }
 }
 
 @media (max-width: 1284px) {
@@ -1457,7 +1484,7 @@ button.btn:hover {
   }
 }
 
-@media (max-width: 1006px) {
+@media (max-width: 767px) {
   #solutions .bottom img {
     display: block;
     margin: 0 auto;
@@ -2448,8 +2475,11 @@ button.btn:hover {
 
 @media (max-width: 767px) {
   #crisis img {
+    float: none;
+    display: block;
+    max-width: 300px;
     width: 100%;
-    margin-top: 30px;
+    margin: 30px auto 0;
   }
 }
 
@@ -2474,6 +2504,7 @@ button.btn:hover {
 
 @media (max-width: 767px) {
   #crisis .text {
+    max-width: 100%;
     width: 100%;
     margin-left: 0;
   }
@@ -2591,6 +2622,13 @@ button.btn:hover {
   }
 }
 
+@media (max-width: 767px) {
+  #utp .text {
+    float: none;
+    max-width: 100%;
+  }
+}
+
 @media (max-width: 1284px) {
   #utp img {
     width: 341px;
@@ -2607,6 +2645,10 @@ button.btn:hover {
 
 @media (max-width: 767px) {
   #utp img {
+    float: none;
+    display: block;
+    margin: 35px auto 0;
+    max-width: 300px;
     width: 100%;
   }
 }
@@ -3123,6 +3165,14 @@ button.btn:hover {
   }
 }
 
+@media (max-width: 767px) {
+  #marketing .right .text h3 {
+    max-width: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+}
+
 #marketing .right .text p {
   margin: 0;
   font-size: 17px;
@@ -3170,6 +3220,12 @@ button.btn:hover {
 
 #results h2 {
   font-size: 27px;
+}
+
+@media (max-width: 767px) {
+  #results h2 {
+    font-size: 24px;
+  }
 }
 
 #results .content {
@@ -3242,10 +3298,24 @@ button.btn:hover {
   }
 }
 
+@media (max-width: 767px) {
+  #results .left .main-img {
+    float: none;
+    display: block;
+    margin: 0 auto;
+  }
+}
+
 #results .left p {
   float: left;
   width: 500px;
   padding-top: 20px;
+}
+
+@media (max-width: 767px) {
+  #results .left p {
+    width: 100%;
+  }
 }
 
 #results .left .dot {
@@ -3265,6 +3335,12 @@ button.btn:hover {
 @media (max-width: 1006px) {
   #results .left .dot {
     left: 340px;
+  }
+}
+
+@media (max-width: 767px) {
+  #results .left .dot {
+    left: 42%;
   }
 }
 
@@ -3290,6 +3366,12 @@ button.btn:hover {
   }
 }
 
+@media (max-width: 767px) {
+  #results .right {
+    padding: 30px 15px;
+  }
+}
+
 #results .right .quote {
   margin-top: 48px;
   font-size: 28px;
@@ -3305,6 +3387,12 @@ button.btn:hover {
 @media (max-width: 1006px) {
   #results .right .quote {
     margin-top: 30px;
+  }
+}
+
+@media (max-width: 767px) {
+  #results .right .quote {
+    font-size: 20px;
   }
 }
 
@@ -3368,9 +3456,21 @@ button.btn:hover {
   }
 }
 
+@media (max-width: 767px) {
+  #howwork {
+    padding: 30px 0;
+  }
+}
+
 @media (max-width: 1284px) {
   #howwork h2 {
     font-size: 25px;
+  }
+}
+
+@media (max-width: 767px) {
+  #howwork h2 {
+    font-size: 24px;
   }
 }
 
@@ -3452,6 +3552,13 @@ button.btn:hover {
   #howwork .item p {
     text-align: center;
     padding: 0 10px;
+  }
+}
+
+@media (max-width: 767px) {
+  #howwork .item p {
+    font-size: 16px;
+    font-weight: 400;
   }
 }
 
@@ -3581,11 +3688,24 @@ button.btn:hover {
   }
 }
 
+@media (max-width: 767px) {
+  #howwork .item {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
+
 .howwork-divider {
   height: 140px;
   width: 100%;
   background: #b5e5f5 url("../img/howwork-divider.png") 50% 50% no-repeat;
   background-size: cover;
+}
+
+@media (max-width: 767px) {
+  .howwork-divider {
+    display: none;
+  }
 }
 
 /* LIVE */
@@ -3598,6 +3718,12 @@ button.btn:hover {
 @media (max-width: 1006px) {
   #live {
     padding-bottom: 40px;
+  }
+}
+
+@media (max-width: 767px) {
+  #live {
+    padding: 30px 0;
   }
 }
 
@@ -3635,6 +3761,12 @@ button.btn:hover {
   }
 }
 
+@media (max-width: 767px) {
+  #live .content {
+    padding: 30px 15px;
+  }
+}
+
 #live .content img {
   bottom: -29px;
   right: -62px;
@@ -3651,6 +3783,13 @@ button.btn:hover {
     position: static;
     display: block;
     margin: 0 auto;
+  }
+}
+
+@media (max-width: 767px) {
+  #live .content img {
+    max-width: 300px;
+    width: 100%;
   }
 }
 
@@ -3685,6 +3824,12 @@ button.btn:hover {
   }
 }
 
+@media (max-width: 767px) {
+  #live .bottom {
+    width: 100%;
+  }
+}
+
 #live .bottom p {
   margin: 0;
   font-size: 20px;
@@ -3709,6 +3854,12 @@ button.btn:hover {
   #live .bottom img {
     width: 170px;
     height: auto;
+  }
+}
+
+@media (max-width: 767px) {
+  #live .bottom img {
+    display: none;
   }
 }
 
@@ -3746,6 +3897,12 @@ button.btn:hover {
   }
 }
 
+@media (max-width: 767px) {
+  #footer {
+    padding: 30px 0;
+  }
+}
+
 #footer a {
   color: #fff;
 }
@@ -3777,9 +3934,35 @@ button.btn:hover {
   margin-right: 1%;
 }
 
+@media (max-width: 767px) {
+  #footer .col {
+    float: none;
+    max-width: 300px;
+    width: 100%;
+    margin: 0 auto 20px;
+  }
+
+  #footer .col:after,
+  #footer .col:before {
+    content: "";
+    display: table;
+    table-layout: fixed;
+  }
+
+  #footer .col:after {
+    clear: both;
+  }
+}
+
 @media (max-width: 1006px) {
   #footer .col1 {
     margin-right: 2%;
+  }
+}
+
+@media (max-width: 767px) {
+  #footer .col1 {
+    margin-right: auto;
   }
 }
 
@@ -3799,6 +3982,12 @@ button.btn:hover {
   }
 }
 
+@media (max-width: 767px) {
+  #footer .col2 {
+    padding: 0;
+  }
+}
+
 #footer .col3 {
   padding-left: 50px;
   margin-right: 0;
@@ -3807,6 +3996,13 @@ button.btn:hover {
 @media (max-width: 1284px) {
   #footer .col3 {
     padding-left: 25px;
+  }
+}
+
+@media (max-width: 767px) {
+  #footer .col3 {
+    margin-right: auto;
+    padding: 0;
   }
 }
 
@@ -3831,6 +4027,12 @@ button.btn:hover {
 @media (max-width: 1006px) {
   #footer .content-top {
     padding-bottom: 20px;
+  }
+}
+
+@media (max-width: 767px) {
+  #footer .content-top {
+    padding-bottom: 0;
   }
 }
 
@@ -3860,6 +4062,12 @@ button.btn:hover {
 
 #footer .content-top .col2 {
   border-left: 2px solid #fff;
+}
+
+@media (max-width: 767px) {
+  #footer .content-top .col2 {
+    border: none;
+  }
 }
 
 #footer .content-top .col2 input {
@@ -3946,6 +4154,12 @@ button.btn:hover {
   padding-top: 3px;
 }
 
+@media (max-width: 767px) {
+  #footer .content-top .col3 .foot-contact-item {
+    margin-bottom: 20px;
+  }
+}
+
 #footer .content-top .col3 p {
   margin: 0;
   padding-top: 6px;
@@ -4030,6 +4244,12 @@ button.btn:hover {
   }
 }
 
+@media (max-width: 767px) {
+  #footer .content-bottom .col1 {
+    padding: 0;
+  }
+}
+
 #footer .content-bottom .col1 a {
   margin-right: 16px;
 }
@@ -4044,5 +4264,13 @@ button.btn:hover {
   #footer .content-bottom .col1 p {
     margin-top: 26px;
     font-size: 13px;
+  }
+}
+
+@media (max-width: 767px) {
+  #footer .content-bottom .col1 p {
+    margin-top: 20px;
+    margin-bottom: 0;
+    font-weight: 600;
   }
 }
